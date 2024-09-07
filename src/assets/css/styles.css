@@ -3,30 +3,32 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 body .header {
   background-color: #0B0B0B;
   width: 100%;
-  height: auto;
-  padding: 5.3vw 6.25vw;
+  min-height: 64px;
+  padding: 17px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
 }
 body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 body .header .exit-icon {
-  width: 7.5vw;
-  height: 7.5vw;
+  width: 24px;
+  height: 24px;
 }
 body .header .heading {
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
   margin: 0;
 }
 body .banner-catalog {

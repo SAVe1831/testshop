@@ -3,7 +3,7 @@ const sliderModule = {
         products: [
             { 
                 id: 1,
-                images: ["/product1.png", "/product1-2.png", "/product1-3.png"],
+                images: ["product1.png", "product1-2.png", "product1-3.png"],
                 categoryEng: "shoes", 
                 currentPrice: 32190, 
                 oldPrice: 58990, 
@@ -15,7 +15,7 @@ const sliderModule = {
             },
             { 
                 id: 2,
-                images: ["/product2.png", "/product2-2.png", "/product2-3.png"], 
+                images: ["product2.png", "product2-2.png", "product2-3.png"], 
                 categoryEng: "clothes",
                 currentPrice: 22790, 
                 oldPrice: 38990, 
@@ -27,7 +27,7 @@ const sliderModule = {
             },
             { 
                 id: 3,
-                images: ["/product3.png", "/product3-2.png", "/product3-3.png"], 
+                images: ["product3.png", "product3-2.png", "product3-3.png"], 
                 categoryEng: "clothes",
                 currentPrice: 12190, 
                 oldPrice: 22990, 
@@ -39,7 +39,7 @@ const sliderModule = {
             },
             { 
                 id: 4,
-                images: ["/product4.png", "/product4-2.png", "/product4-3.png"], 
+                images: ["product4.png", "product4-2.png", "product4-3.png"], 
                 categoryEng: "clothes",
                 currentPrice: 2690, 
                 oldPrice: 3990, 
@@ -51,7 +51,7 @@ const sliderModule = {
             },
             { 
                 id: 5,
-                images: ["/product5.png", "/product5-2.png", "/product5-3.png"], 
+                images: ["product5.png", "product5-2.png", "product5-3.png"], 
                 categoryEng: "clothes",
                 currentPrice: 4599, 
                 oldPrice: "", 
