@@ -1,0 +1,771 @@
+@media(min-width: 768px) {
+    body {
+        .header {
+            padding: 2.21vw 5.21vw;
+            .heading {
+                font-size: 3.13vw;
+                line-height: 3.9vw;
+            }
+            .auth-icon, .exit-icon, .cart-icon {
+                width: 2.6vw;
+                height: 2.6vw;
+            }
+        }
+        .banner-catalog {
+            width: 89.6%;
+            justify-content: space-between;
+            gap: 2.08vw;
+
+            .banner {
+                width: 65.8%;
+            }
+
+            .big-sale {
+                width: 31.8%;
+                min-height: 400px;
+                padding: 3.91vw 0;
+
+                .text .text-up {
+                    font-size: 2.1vw;
+                    line-height: 2.9vw;
+                }
+
+                .text .text-down {
+                    font-size: 4.2vw;
+                    line-height: 5vw;
+                }
+
+                .time {
+                    gap: 0.78vw;
+
+                    .time__days, .time__hours, .time__minutes, .time__seconds {
+                        gap: 0.52vw;
+                    }
+
+                    .time__days__number, .time__hours__number, .time__minutes__number, .time__seconds__number {
+                        font-size: 4.2vw;
+                        line-height: 5vw;
+                    }
+                    .time__days__text, .time__hours__text, .time__minutes__text, .time__seconds__text {
+                        font-size: 1.8vw;
+                        line-height: 2.4vw;
+                    }
+                }                
+            }
+
+            .catalog {
+                gap: 2.08vw;
+
+                .clothes, .shoes, .equipment {
+                    width: 31.7%;
+                    height: 20.8vw;
+                    min-height: 160px;
+    
+                    .clothes-text, .shoes-text, .equipment-text {
+                        margin-left: 2.08vw;
+                        margin-top: 2.08vw;
+                        font-size: 2.1vw;
+                        line-height: 2.9vw;
+                    }
+                    .clothes-image {
+                        width: 19.3vw;
+                        height: 20.8vw;
+                        position: relative;
+                        right: 0;
+                    }
+                    .shoes-image {
+                        right: 6%;
+                    }
+                    .equipment-image {
+                        right: 10%;
+                    }
+                }   
+            }
+        }
+        .list-filter-container {
+            width: 89.6%;
+            margin: 9.37vw auto 0 auto;
+            gap: 3.12vw;
+
+            .heading {
+                font-size: 3.13vw;
+                line-height: 3.9vw;
+            }
+            .list-filter .filter-button {
+                display: none;
+            }
+            .list-filter {
+                gap: 3.12vw;
+
+                .list .p-carousel .p-carousel-item {
+                    flex: 0 0 33%;
+                }
+                
+                .filter {
+                    width: 100%;
+                    height: auto;
+                    min-height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+    
+                    .filter-category-and-price {
+                        width: 46.8%;
+                        height: auto;
+                        min-height: 40px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 16px;
+    
+                        .filter-category {
+                            width: 68%;
+                            height: auto;
+                            min-height: 40px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 16px;
+                            border-radius: 8px;
+        
+                            .custom-select {
+                                width: 100%;
+                                height: auto;
+                                min-height: 40px;
+                                position: relative;
+        
+                                .select-selected-icon {                            
+                                    height: auto;
+                                    background-color: #F5F5F5;
+                                    border-radius: 8px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 1.3vw 2.08vw;
+                                    gap: 2.5vw;
+                                    cursor: pointer;
+        
+                                    .select-selected {                                
+                                        font-size: 1.82vw;
+                                        line-height: 2.34vw;
+                                        font-weight: 400;
+                                        color: #0B0B0B;
+                                    }
+                                }
+                                .select-selected-icon:hover {
+                                    border: 1px solid #61AFD2;
+                                }
+                                .select-items {
+                                    position: absolute;
+                                    z-index: 1;
+                                    background-color: #FFFFFF;
+                                    border-radius: 8px;
+                                    width: 100%;
+                                    height: 26vw;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: flex-start;
+                                    overflow: scroll;
+                                    cursor: pointer;
+                    
+                                    .select-item {
+                                        width: 100%;
+                                        height: 5.21vw;
+                                        padding: 1.3vw 1.3vw;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1.04vw;
+                                        font-size: 1.56vw;
+                                        font-weight: 400;
+                                        cursor: pointer;
+        
+                                        .checkbox-label {
+                                            cursor: pointer;
+                                        }
+                    
+                                        .p-component {
+                                            width: 2.6vw;
+                                            height: 2.6vw;
+                                            border-radius: 4px;
+                                            border: 0.13vw solid #E6E6E6;
+                                        }
+                                        .p-checkbox-checked {
+                                            background-color: #61AFD2;
+                                            
+                                            .p-checkbox-input {
+                                                width: 2.6vw;
+                                                height: 2.6vw;
+                                            }
+                                            .p-checkbox-box {
+                                                width: 2.6vw;
+                                                height: 2.6vw;
+                    
+                                                .p-checkbox-icon {
+                                                    color: #FFFFFF;
+                                                    width: 1.69vw;
+                                                    height: 1.69vw;
+                                                }
+                                            }                        
+                                        }
+                                    }
+                                    .select-item:hover {
+                                        background-color: #F8F8FA;
+                                    }
+                                }                        
+                            }                    
+                        }
+                        .filter-category:hover {
+                            border: 1px solid #61AFD2;
+                        }
+                        .filter-price {
+                            width: 28.3%;
+                            height: auto;
+                            min-height: 40px;
+                            border-radius: 8px;
+                            padding: 1.43vw 2.08vw;
+                            background-color: #F5F5F5;
+                            font-size: 1.82vw;
+                            line-height: 2.34vw;
+                            font-weight: 400;
+                            color: #0B0B0B;
+                            cursor: pointer;
+                            border: 1px solid transparent;
+                            position: relative;
+                        }
+                        .filter-price:hover {
+                            border: 1px solid #61AFD2;
+                        }
+                        .filter-price:active {
+                            border: 1px solid #0B0B0B;
+                        }
+    
+                        .price-range {
+                            width: 52.08vw;
+                            height: auto;
+                            min-height: 144px;
+                            border-radius: 16px;
+                            padding: 3.12vw;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 16px;
+                            background-color: #FFFFFF;
+                            position: absolute;
+                            top: 5.47vw;
+                            left: 0;   
+                            z-index: 1;
+                            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);  
+                            
+                            .slider-range {
+                                width: 100%;
+                                height: 0.78vw;                  
+                                background-color: #F5F5F5;   
+                                border-radius: 16px;                 
+                                
+                                .p-slider-range {
+                                    background-color: #61AFD2;
+                                    height: 0.78vw;                        
+                                }
+                                .p-slider-handle {
+                                    background-color: #61AFD2;
+                                    width: 3.12vw;
+                                    height: 3.12vw;
+                                    border-radius: 50%;
+                                    transform: translate(-1.56vw, -1.56vw);
+                                }                    
+                            }
+                            .price-value {
+                                width: 100%;
+                                height: auto;
+                                min-height: 56px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 1.04vw;
+                
+                                .price-value-box {
+                                    width: 20.31vw;
+                                    height: auto;
+                                    min-height: 56px;
+                                    background-color: #F5F5F5;
+                                    padding: 1.43vw 2.08vw;
+                                    border-radius: 8px;
+                                    gap: 1.3vw;
+                                    font-size: 2.6vw;
+                                    line-height: 3.39vw;
+                                    font-weight: 400;
+                                    color: #707070;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }   
+    
+                    .in-stock {
+                        width: 40.5%;
+                        height: auto;
+                        min-height: 24px;
+                        gap: 8px;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                        font-weight: 400;
+                        color: #0B0B0B;
+    
+                        .switch-svg {
+    
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }            
+            
+            .filter-selected {
+                width: 100%;
+                height: auto;
+                min-height: 20px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 24px;
+
+                .filter-selected-category {
+                    width: auto;
+                    height: auto; 
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;  
+                    font-size: 1.82vw;
+                    line-height: 2.34vw;
+                    font-weight: 400;
+                    color: #0B0B0B;  
+                    
+                    .svg-remove-icon {
+                        cursor: pointer;
+                    }
+                }
+                .filter-selected-price {
+                    width: auto;
+                    height: auto; 
+                    display: flex;
+                    align-items: center;
+                    gap: 8px; 
+                    font-size: 1.82vw;
+                    line-height: 2.34vw;
+                    font-weight: 400;
+                    color: #0B0B0B;   
+                    
+                    .svg-remove-icon {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .list-filter .list {
+
+                .p-carousel-item-list {
+                    gap: 1.56vw;
+                }
+
+                .p-carousel {
+
+                    .p-carousel-item {
+                        flex: 0 0 31.84%;
+                    }
+                }
+            }
+
+            .list-filter .list .product-card .product-info .product-price {
+                width: 17vw;
+            }
+            .list-filter .list .product-card .product-info .current-price {
+                font-size: 1.82vw;
+                line-height: 2.37vw;
+                font-weight: 500;
+            }
+            .list-filter .list .product-card .product-info .old-price {
+                font-size: 1.82vw;
+                line-height: 2.37vw;
+                font-weight: 400;
+            }
+            .list-filter .list .product-card .product-info .product-description {
+                font-size: 1.82vw;
+                line-height: 2.37vw;
+                font-weight: 400;
+            }
+        }
+        .offer-container {
+            width: 89.6%;
+            height: auto;
+            min-height: 452px;
+            margin: 9.37vw auto 0 auto;
+            padding: 3.12vw;
+            gap: 3.12vw;
+
+            .offer-form {
+                gap: 3.12vw;
+
+                .offer-form-text {
+                    gap: 2.08vw;
+
+                    .offer-form-text-heading {
+                        font-size: 3.12vw;
+                        line-height: 3.91vw;
+                    }
+                    .offer-form-text-paragraph {
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                    }
+                }
+            }
+            
+            .offer-form .offer-form-inputs-container {                
+                gap: 3.12vw;
+
+                .offer-form-inputs {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 2.08vw;
+
+                    .offer-form-input-wrapper {
+                        width: 48.7%;
+                        min-height: 40px;                        
+
+                        .offer-form-input {
+                            width: 100%;
+                            gap: 1.32vw;
+                            font-size: 1.82vw;
+                            line-height: 2.34vw;
+                        }
+
+                        .form-error {
+                            font-size: 1.56vw;
+                        }
+                    }
+                    .offer-form-input {
+                        width: 48.7%;
+                        height: 5.21vw;
+                        padding: 1.43vw 2.08vw;
+                        gap: 1.32vw;
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                    }
+                    .offer-form-input::placeholder {
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                    }
+
+                    .custom-select  {
+                        .select-selected-icon {
+                            padding: 1.43vw 2.08vw;
+                            gap: 1.04vw;
+                        }
+                        .select-selected {
+                            font-size: 1.82vw;
+                            line-height: 2.34vw;
+                        }
+
+                        .select-items .select-item {
+                            padding: 2.08vw;
+                            height: 5.21vw;
+                        }
+
+                        .select-items {
+                            height: 20.83vw;
+                        }
+                    }
+
+                    .svg-dropdown {
+                        width: 2.6vw;
+                        height: 2.6vw;
+                    }
+                }
+
+                .offer-form-rating {
+                    flex-direction: row;
+                    width: 100%;
+                    min-height: 20px;
+                    gap: 3.12vw;
+                    font-size: 1.82vw;
+                    line-height: 2.34vw;
+
+                    .custom-radio {
+                        gap: 1.04vw;
+
+                        .radio-mark {
+                            width: 2.6vw;
+                            height: 2.6vw;
+                        }
+
+                        .radio-input:checked + .radio-mark::after {
+                            width: 2.6vw;
+                            height: 2.6vw;
+                            border: 0.91vw solid #61AFD2;
+                        }
+                    }
+                }
+
+                .file-upload-container {
+                    min-height: 40px;
+                    padding: 1.3vw 2.08vw;
+                    gap: 1.04vw;
+
+                    .svg-clip {
+                        width: 2.6vw;
+                        height: 2.6vw;
+                    }
+
+                    .file-upload-label {
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                    }
+                }
+
+                .file-upload-text {
+                    .photo-file-name {
+                        font-size: 1.82vw;
+                        line-height: 2.34vw;
+                    }
+                    .svg-remove {
+                        width: 2.6vw;
+                        height: 2.6vw;
+                    }
+                }
+
+                .offer-form-submit {
+                    width: 48.8%;
+                    min-height: 40px;
+                    padding: 1.43vw 2.08vw;
+                    gap: 1.32vw;
+                    font-size: 1.82vw;
+                    line-height: 2.34vw;
+
+                    .wait-svg {
+                        width: 2.6vw;
+                        height: 2.6vw;
+                    }
+                }
+            }
+        }
+        .footer {
+            margin: 9.37vw auto 0 auto;
+            padding: 2.83vw 4.91vw;
+            font-size: 1.82vw;
+            line-height: 2.34vw;
+            text-align: end;
+        }
+        .auth-container-step-first, .auth-container-step-second {
+            width: 62.5%;
+            height: 30.73vw;
+            left: 18.75%;
+            top: 39.1vw;
+            padding: 4.17vw;
+            border-radius: 16px;
+
+            .auth-title {                
+                font-size: 2.6vw;
+                line-height: 3.65vw;
+            }
+            .svg-close-auth {
+                width: 3.12vw;
+                height: 3.12vw;
+                top: 2.08vw;
+                right: 2.08vw;
+            }
+            .auth-input-phone, .auth-input-code {
+                height: 6.25vw;
+                padding: 1.69vw 2.08vw;
+                gap: 1.3vw;
+                font-size: 2.34vw;
+                line-height: 2.8vw;
+                font-weight: 400;
+            }
+            .auth-input-phone::placeholder, .auth-input-code::placeholder {
+                font-size: 2.34vw;
+                line-height: 2.8vw;
+            }
+            .form-error {
+                font-size: 2.34vw;
+            }
+            .button-code-submit, .button-agree, .button-code-submit-disabled, .button-agree-disabled {                
+                min-height: 48px;
+                padding: 1.69vw 2.08vw;
+                gap: 1.3vw;
+                border-radius: 8px;
+                font-size: 2.34vw;
+                line-height: 2.8vw;
+                font-weight: 400;
+            }
+            .code-timer, .code-send-again {
+                font-size: 1.82vw;
+                line-height: 2.34vw;
+            }
+            .wait-svg {
+                width: 2.6vw;
+                height: 2.6vw;
+            }
+        }
+        .popup-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0B0B0B;
+            opacity: 20%;
+            z-index: 1;
+        }
+        .popup-content {
+            width: 89.6%;
+            height: auto;
+            min-height: 560px;
+            background-color: #FFFFFF;  
+            position: fixed;
+            top: 29.3%;
+            left: 5.2%;
+            z-index: 2;
+            border-radius: 16px;
+            padding: 3.12vw;
+            gap: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            .photos, .product-card-details {
+                width: 48.125%;
+                height: auto;
+                min-height: 512px;
+                padding: 0;
+            }
+
+            .svg-close-popup {
+                width: 3.12vw;
+                height: 3.12vw;
+                position: absolute;
+                top: 2.08vw;
+                right: 2.08vw;
+            }
+            
+            .photos {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 2.08vw;
+
+                .photo-zoom {
+                    width: 100%;
+                    height: 50.26vw;
+                    border-radius: 16px;
+
+                    .photo-zoom-image {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 16px;
+                    }
+                }
+
+                .photo-list {
+                    width: 100%;
+                    height: 14.32vw;
+                    gap: 2.08vw;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .photo-list-item {
+                        width: 29.87%;  
+                        border-radius: 16px;   
+                        cursor: pointer;  
+                        opacity: 0.3;                 
+                    }
+
+                    .photo-list-item:hover {
+                        opacity: 1;
+                    }
+
+                    .photo-list-item.active {
+                        border: 1px solid #61AFD2;
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            .product-card-details {
+                gap: 2.6vw;
+
+                .product-card-details-title {
+                    font-size: 2.6vw;
+                    line-height: 3.65vw;
+                }
+
+                .product-card-details-colors {
+
+                    .product-card-details-colors-text {
+                        font-size: 2.34vw;
+                        line-height: 2.8vw;
+                    }
+
+                    .product-card-details-colors-list {
+                        gap: 1.04vw;
+
+                        .product-card-details-colors-list-item {
+                            width: 4.17vw;
+                            height: 4.17vw;
+                        }
+                    }
+                }   
+                
+                .product-card-details-size {
+                    gap: 1.04vw;
+
+                    .product-card-details-size-text {
+                        font-size: 2.6vw;
+                        line-height: 3.65vw;
+                    }
+                    .product-card-details-size-choise {
+                        gap: 1.04vw;
+                        
+                        .product-card-details-size-choise-item {
+                            font-size: 2.6vw;
+                            line-height: 3.39vw;
+                        }
+                    }
+                }
+
+                .product-card-details-description {
+                    gap: 1.04vw;
+                    .product-card-details-description-title, .product-card-details-description-text {
+                        font-size: 2.34vw;
+                        line-height: 2.8vw;
+                    }
+                }
+
+                .product-card-details-price {
+                    gap: 2.08vw;
+
+                    .product-card-details-current-price, .product-card-details-old-price {
+                        font-size: 2.6vw;
+                        line-height: 3.65vw;
+                    }
+                }
+
+                .product-card-details-button-add {
+                    min-height: 48px;
+                    padding: 1.69vw 2.08vw;
+                    gap: 1.3vw;
+                    font-size: 2.34vw;
+                    line-height: 2.8vw;
+
+                    .wait-svg {
+                        width: 3.12vw;
+                        height: 3.12vw;
+                    }
+                }
+            }
+        }
+    }
+}

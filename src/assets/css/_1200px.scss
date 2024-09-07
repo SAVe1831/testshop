@@ -1,0 +1,565 @@
+@media(min-width: 1200px) {
+    body {
+        .header {
+            padding: 1.75vw 5.33vw;
+            .heading {
+                font-size: 2.67vw;
+                line-height: 3.2vw;
+            }
+            .auth-icon, .exit-icon, .cart-icon {
+                width: 2.67vw;
+                height: 2.67vw;
+            }
+        }
+        .banner-catalog {
+            width: 89.33%;
+            margin-top: 2vw;
+            justify-content: space-between;
+            gap: 2vw;
+
+            .banner {
+                width: 65.95%;
+                height: 46.67vw;
+            }
+
+            .big-sale {
+                width: 31.8%;
+                min-height: 560px;
+                padding: 3.75vw 0;
+
+                .text .text-up {
+                    font-size: 2vw;
+                    line-height: 2.5vw;
+                }
+
+                .text .text-down {
+                    font-size: 4vw;
+                    line-height: 4.8vw;
+                }
+
+                .time {
+                    gap: 1.33vw;
+
+                    .time__days, .time__hours, .time__minutes, .time__seconds {
+                        gap: 0.67vw;
+                    }
+
+                    .time__days__number, .time__hours__number, .time__minutes__number, .time__seconds__number {
+                        font-size: 4vw;
+                        line-height: 4.8vw;
+                    }
+                    .time__days__text, .time__hours__text, .time__minutes__text, .time__seconds__text {
+                        font-size: 1.5vw;
+                        line-height: 1.8vw;
+                    }
+                }                
+            }
+
+            .catalog {
+                gap: 2vw;
+
+                .clothes, .shoes, .equipment {
+                    width: 31.81%;
+                    height: 23.33vw;
+    
+                    .clothes-text, .shoes-text, .equipment-text {
+                        margin-left: 2vw;
+                        margin-top: 2vw;
+                        font-size: 2vw;
+                        line-height: 2.5vw;
+                    }
+                    .clothes-image {
+                        width: 21.67vw;
+                        transform: scaleX(1.2);
+                        height: 23.33vw;
+                        right: 7%;
+                    }
+                    .shoes-image {
+                        right: -7%;
+                    }
+                    .equipment-image {
+                        right: 11%;
+                    }
+                }
+            }            
+        }
+        .list-filter-container {
+            width: 89.33%;
+            height: 65.67vw;
+            margin: 7.26vw auto 0 auto;
+            gap: 2.67vw;
+
+            .heading {
+                font-size: 3.33vw;
+                line-height: 4vw;
+            }
+            .list-filter {
+                gap: 2vw;
+
+                .filter {
+                    width: 100%;
+                    height: 4.67vw;
+    
+                    .filter-category-and-price {
+                        gap: 2vw;
+
+                        .filter-category {
+                            width: 74.4%;
+                            height: 4.67vw;
+                                    
+                            .custom-select {
+        
+                                .select-selected-icon {                            
+                                    height: 4.67vw;
+                                    padding: 1.25vw 1.33vw;
+                                    gap: 0.67vw;
+        
+                                    .select-selected {                                
+                                        font-size: 1.67vw;
+                                        line-height: 2.17vw;
+                                    }
+                                    .svg-dropdown {
+                                        width: 2vw;
+                                        height: 2vw;
+                                    }
+                                }                                                       
+                            }                    
+                        }
+
+                        .filter-price {
+                            width: 26.2%;
+                            height: 4.67vw;
+                            padding: 1.25vw 2vw;
+                            gap: 0.83vw;
+                            font-size: 1.67vw;
+                            line-height: 2.17vw;                            
+                        }
+                            
+                        .price-range {                              
+                            width: 33.33vw;
+                            padding: 2vw;
+
+                            .price-value {
+                                gap: 0.67vw;
+                
+                                .price-value-box {
+                                    font-size: 1.67vw;
+                                    line-height: 2.17vw;                                    
+                                }
+                            }
+                        }
+                    }   
+    
+                    .in-stock {
+                        width: 35.5%;
+                        height: 2.83vw;
+                        gap: 1.33vw;
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+    
+                        .switch-svg {
+                            width: 4.33vw;
+                            height: 2.33vw;
+                        }
+                    }
+                }
+                
+            }
+            
+            .filter-selected {
+
+                .filter-selected-category {                      
+                    
+                    .svg-remove-icon {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+                .filter-selected-price {                      
+                    
+                    .svg-remove-icon {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+            }
+
+            .list-filter {
+
+                .icon-prev, .icon-next {
+                    width: 4.67vw;
+                    height: 4.67vw;
+                }                
+            }            
+
+            .list-filter .list {
+                height: auto;
+                min-height: 52.33vw;
+
+                .p-carousel-item-list {
+                    gap: 2vw;
+                }
+
+                .p-carousel {
+
+                    .p-carousel-item {
+                        flex: 0 0 31.82%;
+                    }
+                }
+            }
+
+            .list-filter .list .product-card {
+                gap: 1.33vw;
+            }
+
+            .list-filter .list .product-card .product-info {               
+                gap: 1vw;
+                .product-price {
+                    gap: 1vw;
+                    width: 17vw;
+                }
+                .current-price, .old-price, .product-description {
+                    font-size: 1.67vw;
+                    line-height: 2.17vw;
+                }  
+                .product-size {
+
+                    .product-card-details-size-choise {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                } 
+                .product-color {
+                    .product-card-details-colors-list {
+                        .product-card-details-colors-list-item {
+                            width: 2.67vw;
+                            height: 2.67vw;
+                        }
+                    }
+                }
+            }
+        }
+        .offer-container {
+            width: 89.33%;
+            height: auto;
+            min-height: 664px; 
+            margin: 7.33vw auto 0 auto;
+            padding: 3.33vw;
+            display: flex;
+            gap: 3.33vw;
+
+            .offer-form {
+                width: 67.24%;
+                gap: 3.33vw;
+
+                .offer-form-text {
+                    gap: 1.33vw;
+
+                    .offer-form-text-heading {
+                        font-size: 3.33vw;
+                        line-height: 4vw;
+                    }
+                    .offer-form-text-paragraph {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                }
+            }
+            
+            .offer-form .offer-form-inputs-container {                
+                gap: 2vw;
+
+                .offer-form-inputs {
+                    gap: 1.33vw;
+
+                    .offer-form-input-wrapper {                        
+
+                        .offer-form-input {
+                            gap: 0.83vw;
+                            font-size: 1.67vw;
+                            line-height: 2.17vw;
+                            padding: 1.25vw 1.33vw;
+                        }
+
+                        .form-error {
+                            font-size: 1.17vw;
+                        }
+                    }
+                    .offer-form-input {
+                        height: 4.67vw;
+                        gap: 0.83vw;
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                    .offer-form-input::placeholder {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+
+                    .custom-select  {
+                        .select-selected-icon {
+                            padding: 1.25vw 1.33vw;
+                            gap: 0.67vw;
+                        }
+                        .select-selected {
+                            font-size: 1.67vw;
+                            line-height: 2.17vw;
+                        }
+
+                        .select-items .select-item {
+                            padding: 1.25vw 1.33vw;
+                            height: 4vw;
+                        }
+
+                        .select-items {
+                            height: 16.67vw;
+                        }
+                    }
+
+                    .svg-dropdown {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+
+                .offer-form-rating {
+                    gap: 2vw;
+                    font-size: 1.67vw;
+                    line-height: 2.17vw;
+
+                    .custom-radio {
+                        gap: 1.33vw;
+
+                        .radio-mark {
+                            width: 2vw;
+                            height: 2vw;
+                        }
+
+                        .radio-input:checked + .radio-mark::after {
+                            width: 2vw;
+                            height: 2vw;
+                            border: 0.75vw solid #61AFD2;
+                        }
+                    }
+                }
+
+                .file-upload-container {
+                    padding: 1.25vw 1.33vw;
+                    gap: 0.67vw;
+
+                    .svg-clip {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+
+                    .file-upload-label {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                }
+
+                .file-upload-text {
+                    .photo-file-name {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                    .svg-remove {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+
+                .offer-form-submit {
+                    padding: 1.25vw 1.33vw;
+                    gap: 0.83vw;
+                    font-size: 1.67vw;
+                    line-height: 2.17vw;
+
+                    .wait-svg {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+            }
+        }
+        .footer {
+            margin: 7.33vw auto 0 auto;
+            padding: 2.25vw 5.33vw;
+            font-size: 1.67vw;
+            line-height: 2.17vw;
+        }
+        .auth-container-step-first, .auth-container-step-second {
+            width: 41.7%;
+            height: auto;
+            min-height: 276px;
+            left: 29.15%;
+            top: 33.33vw;
+            bottom: auto;
+            padding: 3.33vw;
+            gap: 2vw;
+
+            .auth-title {                
+                font-size: 2vw;
+                line-height: 2.5vw;
+            }
+            .svg-close-auth {
+                width: 2vw;
+                height: 2vw;
+                top: 1.33vw;
+                right: 1.33vw;
+            }
+            .auth-input-phone, .auth-input-code {
+                height: 4.67vw;
+                padding: 1.25vw 1.33vw;
+                gap: 0.83vw;
+                font-size: 1.67vw;
+                line-height: 2.17vw;
+            }
+            .auth-input-phone::placeholder, .auth-input-code::placeholder {
+                font-size: 1.67vw;
+                line-height: 2.17vw;
+            }
+            .form-error {
+                font-size: 1.67vw;
+            }
+            .button-code-submit, .button-agree, .button-code-submit-disabled, .button-agree-disabled {                
+                min-height: 56px;
+                padding: 1.25vw 1.33vw;
+                gap: 0.83vw;
+                font-size: 1.67vw;
+                line-height: 2.17vw;
+            }
+            .code-timer, .code-send-again {
+                font-size: 1.67vw;
+                line-height: 2.17vw;
+            }
+            .wait-svg {
+                width: 2vw;
+                height: 2vw;
+            }
+        }        
+        .popup-content {
+            width: 89.33%;
+            height: auto;
+            min-height: 600px;            
+            top: 28.3%;
+            left: 5.334%;            
+            padding: 3.33vw;
+            gap: 3.33vw;
+
+            .svg-close-popup {
+                width: 2vw;
+                height: 2vw;
+                top: 1.33vw;
+                right: 1.33vw;
+            }
+            
+            .photos {
+                width: 54.03%;
+                height: 43.33vw;
+                gap: 1.33vw;
+                flex-direction: row-reverse;
+
+                .photo-zoom {
+                    width: 74.25%;
+                    height: auto;
+                    border-radius: 16px;
+
+                    .photo-zoom-image {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 16px;
+                    }
+                }
+
+                .photo-list {
+                    width: 22.76%;
+                    height: 13.1vw;
+                    gap: 1.61vw;
+                    flex-direction: column;
+
+                    .photo-list-item {
+                        width: 100%;                 
+                    }
+                }
+            }
+            
+            .product-card-details {
+                justify-content: flex-start;
+                width: 41.93%;
+                height: auto;
+                gap: 2vw;
+
+                .product-card-details-title {
+                    font-size: 2vw;
+                    line-height: 2.5vw;
+                }
+
+                .product-card-details-colors {
+                    gap: 1.33vw;
+
+                    .product-card-details-colors-text {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+
+                    .product-card-details-colors-list {
+                        gap: 0.67vw;
+
+                        .product-card-details-colors-list-item {
+                            width: 2.67vw;
+                            height: 2.67vw;
+                        }
+                    }
+                }   
+                
+                .product-card-details-size {
+                    gap: 1.33vw;
+
+                    .product-card-details-size-text {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                    .product-card-details-size-choise {
+                        gap: 1.33vw;
+                        
+                        .product-card-details-size-choise-item {
+                            font-size: 1.67vw;
+                            line-height: 2.17vw;
+                        }
+                    }
+                }
+
+                .product-card-details-description {
+                    gap: 0.67vw;
+
+                    .product-card-details-description-title, .product-card-details-description-text {
+                        font-size: 1.67vw;
+                        line-height: 2.17vw;
+                    }
+                }
+
+                .product-card-details-price {
+                    gap: 1.61vw;
+
+                    .product-card-details-current-price, .product-card-details-old-price {
+                        font-size: 2vw;
+                        line-height: 2.5vw;
+                    }
+                }
+
+                .product-card-details-button-add {
+                    padding: 1.25vw 1.33vw;
+                    gap: 0.83vw;
+                    font-size: 1.67vw;
+                    line-height: 2.17vw;
+
+                    .wait-svg {
+                        width: 2vw;
+                        height: 2vw;
+                    }
+                }
+            }
+        }
+    }
+}
