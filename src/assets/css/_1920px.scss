@@ -1,22 +1,23 @@
 @media(min-width: 1920px) {
     body {
         .header {
-            padding: 1.09vw 6.67vw;
+            padding: 21px 128px;
+
             .heading {
-                font-size: 1.67vw;
-                line-height: 2vw;
+                font-size: 32px;
+                line-height: 38px;
             }
             .auth-icon, .exit-icon, .cart-icon {
-                width: 1.67vw;
-                height: 1.67vw;
+                width: 32px;
+                height: 32px;
             }
         }
         .banner-catalog {
             width: 86.67%;
             height: 48.13vw;
-            margin-top: 1.25vw;
+            margin-top: 24px;
             flex-direction: column;
-            gap: 1.25vw;
+            gap: 24px;
 
             .banner {
                 width: 74.63%;
@@ -26,30 +27,30 @@
             .big-sale {
                 width: 23.92%;
                 height: 48.13vw;
-                padding: 3.13vw 0;
+                padding: 64px 0;
                 justify-content: flex-end;
                 order: 2;
 
                 .text {
                     width: 100%;
-                }
+                    gap: 16px;
 
-                .text .text-up {
-                    font-size: 1.25vw;
-                    line-height: 1.56vw;
-                }
-
-                .text .text-down {
-                    font-size: 3.33vw;
-                    line-height: 4vw;
+                    .text-up {
+                        font-size: 1.25vw;
+                        line-height: 1.56vw;
+                    }
+                    .text-down {
+                        font-size: 3.33vw;
+                        line-height: 4vw;
+                    }
                 }
 
                 .time {
-                    gap: 1.25vw;
+                    gap: 24px;
                     margin-top: 10.42vw;
 
                     .time__days, .time__hours, .time__minutes, .time__seconds {
-                        gap: 0.42vw;
+                        gap: 8px;
                     }
 
                     .time__days__number, .time__hours__number, .time__minutes__number, .time__seconds__number {
@@ -66,7 +67,7 @@
             .catalog {
                 width: 64.68vw;
                 height: 15.62vw;
-                gap: 1.25vw;
+                gap: 24px;
 
                 .clothes, .shoes, .equipment {
                     width: 20.72vw;
@@ -99,73 +100,69 @@
         .list-filter-container {
             width: 86.67%;
             height: 46.15vw;
-            margin: 5vw auto 0 auto;
-            gap: 2.08vw;
+            margin: 96px auto 0 auto;
+            gap: 40px;
 
             .heading {
-                font-size: 2.5vw;
-                line-height: 3vw;
+                font-size: 48px;
+                line-height: 57.6px;
             }
             .list-filter {
                 height: 41.04vw;
-                gap: 1.25vw;
 
                 .filter {
-                    width: 100%;
-                    height: 2.92vw;
-    
+                    
                     .filter-category-and-price {
                         width: 33%;
-                        gap: 1.25vw;
 
                         .filter-category {
                             width: 72.5%;
-                            height: 2.92vw;
+                            height: 56px;
                                     
                             .custom-select {
         
                                 .select-selected-icon {                            
-                                    height: 2.92vw;
-                                    padding: 0.78vw 0.83vw;
-                                    gap: 0.42vw;
+                                    height: 56px;
+                                    padding: 15px 16px;
+                                    gap: 8px;
         
                                     .select-selected {                                
-                                        font-size: 1.04vw;
-                                        line-height: 1.35vw;
+                                        font-size: 20px;
+                                        line-height: 26px;
                                     }
                                     .svg-dropdown {
-                                        width: 1.25vw;
-                                        height: 1.25vw;
+                                        width: 24px;
+                                        height: 24px;
                                     }
                                 } 
                                 
                                 .select-items {
-                                    height: 12.5vw;
+                                    height: 240px;
 
                                     .select-item {
-                                        height: 2.6vw;
-                                        padding: 0.52vw 0.52vw;
-                                        gap: 0.42vw;
-                                        font-size: 1.04vw;
-                                        line-height: 1.35vw;
+                                        height: 50px;
+                                        padding: 10px;
+                                        gap: 8px;
+                                        font-size: 20px;
+                                        line-height: 26px;
 
                                         .p-component {
-                                            width: 1.67vw;
-                                            height: 1.67vw;
+                                            width: 24px;
+                                            height: 24px;
                                         }
                                         .p-checkbox-checked {
                                             
                                             .p-checkbox-input {
-                                                width: 1.67vw;
-                                                height: 1.67vw;
+                                                width: 24px;
+                                                height: 24px;
                                             }
                                             .p-checkbox-box {
-                                                width: 1.67vw;
-                                                height: 1.67vw;
+                                                width: 24px;
+                                                height: 24px;
                     
                                                 .p-checkbox-icon {
-                                                    width: 1.69vw;
-                                                    height: 1.69vw;
+                                                    width: 24px;
+                                                    height: 24px;
                                                 }
                                             }
                                         }
@@ -176,25 +173,26 @@
 
                         .filter-price {
                             width: 23.13%;
-                            height: 2.92vw;
-                            padding: 0.78vw 1.25vw;
-                            gap: 0.52vw;
-                            font-size: 1.04vw;
-                            line-height: 1.35vw;                            
+                            height: 56px;
+                            padding: 15px 24px;
+                            gap: 10px;
+                            font-size: 20px;
+                            line-height: 26px;                            
                         }
                             
                         .price-range {                              
-                            width: 33.33vw;
-                            padding: 2vw;
-                            gap: 1.83vw;
+                            width: 600px;
+                            padding: 38px;
+                            gap: 34px;
 
                             .price-value {
-                                gap: 0.42vw;
+                                gap: 8px;
                 
                                 .price-value-box {
-                                    width: 10.42vw;
-                                    font-size: 1.04vw;
-                                    line-height: 1.35vw;                                    
+                                    width: 180px;
+                                    font-size: 20px;
+                                    line-height: 26px;  
+                                    font-family: 'Montserrat', sans-serif;                                  
                                 }
                             }
                         }
@@ -202,10 +200,10 @@
     
                     .in-stock {
                         width: 22.84%;
-                        height: 1.46vw;
-                        gap: 0.83vw;
-                        font-size: 1.04vw;
-                        line-height: 1.35vw;
+                        height: 28px;
+                        gap: 16px;
+                        font-size: 20px;
+                        line-height: 26px;
     
                         .switch-svg {
                             width: 2.71vw;
@@ -219,21 +217,21 @@
             .filter-selected {
 
                 .filter-selected-category {     
-                    font-size: 1.04vw;
-                    line-height: 1.35vw;                 
+                    font-size: 20px;
+                    line-height: 26px;                
                     
                     .svg-remove-icon {
-                        width: 1.25vw;
-                        height: 1.25vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
                 .filter-selected-price {    
-                    font-size: 1.04vw;
-                    line-height: 1.35vw;                   
+                    font-size: 20px;
+                    line-height: 26px;                   
                     
                     .svg-remove-icon {
-                        width: 1.25vw;
-                        height: 1.25vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }
@@ -256,10 +254,10 @@
 
             .list-filter .list {
                 height: auto;
-                min-height: 36.88vw;
+                min-height: 708px;
 
                 .p-carousel-item-list {
-                    gap: 1.25vw;
+                    gap: 24px;
                 }
 
                 .p-carousel {
@@ -271,261 +269,121 @@
             }
 
             .list-filter .list .product-card {
-                gap: 0.83vw;
+                gap: 16px;
             }
 
             .list-filter .list .product-card .product-info {               
-                gap: 0.62vw;
+                gap: 12px;
                 
                 .product-price {
-                    gap: 0.62vw;
+                    gap: 12px;
                     width: 10vw;
                 }
                 .current-price, .old-price, .product-description {
-                    font-size: 1.04vw;
-                    line-height: 1.35vw;
+                    font-size: 20px;
+                    line-height: 26px;
                 }  
                 .product-size {
-                    gap: 0.83vw;
+                    gap: 16px;
+
                     .product-card-details-size-choise {
-                        font-size: 1.04vw;
-                        line-height: 1.35vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }   
                 } 
                 .product-color {
                     .product-card-details-colors-list {
-                        gap: 0.42vw;
+                        gap: 8px;
                         .product-card-details-colors-list-item {
-                            width: 1.67vw;
-                            height: 1.67vw;
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                 }
             }
         }
         .offer-container {
-            width: 89.33%;
-            height: auto;
-            min-height: 664px; 
-            margin: 7.33vw auto 0 auto;
-            padding: 3.33vw;
+            width: 86.67%;
+            min-height: 708px; 
+            margin: 96px auto 0 auto;
+            padding: 40px 64px;
             display: flex;
-            gap: 3.33vw;
+            justify-content: space-between;
 
             .offer-form {
-                width: 67.24%;
-                gap: 3.33vw;
+                width: 50.78%;
+                margin-top: 25px;
+                gap: 40px;
 
                 .offer-form-text {
-                    gap: 1.33vw;
+                    gap: 16px;
 
                     .offer-form-text-heading {
-                        font-size: 3.33vw;
-                        line-height: 4vw;
+                        font-size: 48px;
+                        line-height: 57.6px;
                     }
                     .offer-form-text-paragraph {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }
                 }
             }
             
             .offer-form .offer-form-inputs-container {                
-                gap: 2vw;
 
                 .offer-form-inputs {
-                    gap: 1.33vw;
 
-                    .offer-form-input-wrapper {                        
-
-                        .offer-form-input {
-                            gap: 0.83vw;
-                            font-size: 1.67vw;
-                            line-height: 2.17vw;
-                            padding: 1.25vw 1.33vw;
-                        }
+                    .offer-form-input-wrapper {                       
 
                         .form-error {
-                            font-size: 1.17vw;
+                            font-size: 17px;
+                            padding: 0;
                         }
                     }
                     .offer-form-input {
-                        height: 4.67vw;
-                        gap: 0.83vw;
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
-                    }
-                    .offer-form-input::placeholder {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
-                    }
+                        gap: 8px;
 
+                    }
+                    
                     .custom-select  {
                         .select-selected-icon {
-                            padding: 1.25vw 1.33vw;
-                            gap: 0.67vw;
+                            gap: 8px;
                         }
-                        .select-selected {
-                            font-size: 1.67vw;
-                            line-height: 2.17vw;
-                        }
-
                         .select-items .select-item {
-                            padding: 1.25vw 1.33vw;
-                            height: 4vw;
-                        }
-
-                        .select-items {
-                            height: 16.67vw;
-                        }
+                            height: 50px;
+                        }                        
                     }
+                }                
+            }
 
-                    .svg-dropdown {
-                        width: 2vw;
-                        height: 2vw;
-                    }
-                }
-
-                .offer-form-rating {
-                    gap: 2vw;
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;
-
-                    .custom-radio {
-                        gap: 1.33vw;
-
-                        .radio-mark {
-                            width: 2vw;
-                            height: 2vw;
-                        }
-
-                        .radio-input:checked + .radio-mark::after {
-                            width: 2vw;
-                            height: 2vw;
-                            border: 0.75vw solid #61AFD2;
-                        }
-                    }
-                }
-
-                .file-upload-container {
-                    padding: 1.25vw 1.33vw;
-                    gap: 0.67vw;
-
-                    .svg-clip {
-                        width: 2vw;
-                        height: 2vw;
-                    }
-
-                    .file-upload-label {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
-                    }
-                }
-
-                .file-upload-text {
-                    .photo-file-name {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
-                    }
-                    .svg-remove {
-                        width: 2vw;
-                        height: 2vw;
-                    }
-                }
-
-                .offer-form-submit {
-                    padding: 1.25vw 1.33vw;
-                    gap: 0.83vw;
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;
-
-                    .wait-svg {
-                        width: 2vw;
-                        height: 2vw;
-                    }
-                }
+            .offer-picture {
+                width: 646px;
+                height: 628px;
+                display: block;
             }
         }
         .footer {
-            margin: 7.33vw auto 0 auto;
-            padding: 2.25vw 5.33vw;
-            font-size: 1.67vw;
-            line-height: 2.17vw;
+            margin: 96px auto 0 auto;
+            padding: 27px 128px;
         }
         .auth-container-step-first, .auth-container-step-second {
-            width: 41.7%;
-            height: auto;
-            min-height: 276px;
-            left: 29.15%;
-            top: 33.33vw;
-            bottom: auto;
-            padding: 3.33vw;
-            gap: 2vw;
-
-            .auth-title {                
-                font-size: 2vw;
-                line-height: 2.5vw;
-            }
-            .svg-close-auth {
-                width: 2vw;
-                height: 2vw;
-                top: 1.33vw;
-                right: 1.33vw;
-            }
-            .auth-input-phone, .auth-input-code {
-                height: 4.67vw;
-                padding: 1.25vw 1.33vw;
-                gap: 0.83vw;
-                font-size: 1.67vw;
-                line-height: 2.17vw;
-            }
-            .auth-input-phone::placeholder, .auth-input-code::placeholder {
-                font-size: 1.67vw;
-                line-height: 2.17vw;
-            }
-            .form-error {
-                font-size: 1.67vw;
-            }
-            .button-code-submit, .button-agree, .button-code-submit-disabled, .button-agree-disabled {                
-                min-height: 56px;
-                padding: 1.25vw 1.33vw;
-                gap: 0.83vw;
-                font-size: 1.67vw;
-                line-height: 2.17vw;
-            }
-            .code-timer, .code-send-again {
-                font-size: 1.67vw;
-                line-height: 2.17vw;
-            }
-            .wait-svg {
-                width: 2vw;
-                height: 2vw;
-            }
+            top: 500px;
         }        
         .popup-content {
-            width: 89.33%;
-            height: auto;
-            min-height: 600px;            
-            top: 28.3%;
-            left: 5.334%;            
-            padding: 3.33vw;
-            gap: 3.33vw;
-
-            .svg-close-popup {
-                width: 2vw;
-                height: 2vw;
-                top: 1.33vw;
-                right: 1.33vw;
-            }
+            width: 1192px;
+            height: 600px;
+            top: 10px;
+            left: 0;
+            margin-left: calc((100% - 1192px) / 2);            
             
             .photos {
-                width: 54.03%;
-                height: 43.33vw;
-                gap: 1.33vw;
+                width: 536px;
+                height: 520px;
+                gap: 16px;
                 flex-direction: row-reverse;
 
                 .photo-zoom {
-                    width: 74.25%;
+                    width: 398px;
                     height: auto;
                     border-radius: 16px;
 
@@ -537,90 +395,87 @@
                 }
 
                 .photo-list {
-                    width: 22.76%;
-                    height: 13.1vw;
-                    gap: 1.61vw;
+                    width: 122px;
+                    height: 520px;
+                    gap: 16px;
                     flex-direction: column;
 
-                    .photo-list-item {
-                        width: 100%;                 
-                    }
                 }
             }
             
             .product-card-details {
                 justify-content: flex-start;
-                width: 41.93%;
+                width: 48.2%;
                 height: auto;
-                gap: 2vw;
+                gap: 24px;
 
                 .product-card-details-title {
-                    font-size: 2vw;
-                    line-height: 2.5vw;
+                    font-size: 24px;
+                    line-height: 29.76px;
                 }
 
                 .product-card-details-colors {
-                    gap: 1.33vw;
+                    gap: 16px;
 
                     .product-card-details-colors-text {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }
 
                     .product-card-details-colors-list {
-                        gap: 0.67vw;
+                        gap: 8px;
 
                         .product-card-details-colors-list-item {
-                            width: 2.67vw;
-                            height: 2.67vw;
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                 }   
                 
                 .product-card-details-size {
-                    gap: 1.33vw;
+                    gap: 16px;
 
                     .product-card-details-size-text {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }
                     .product-card-details-size-choise {
-                        gap: 1.33vw;
+                        gap: 16px;
                         
                         .product-card-details-size-choise-item {
-                            font-size: 1.67vw;
-                            line-height: 2.17vw;
+                            font-size: 20px;
+                            line-height: 26px;
                         }
                     }
                 }
 
                 .product-card-details-description {
-                    gap: 0.67vw;
+                    gap: 8px;
 
                     .product-card-details-description-title, .product-card-details-description-text {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }
                 }
 
                 .product-card-details-price {
-                    gap: 1.61vw;
+                    gap: 24px;
 
                     .product-card-details-current-price, .product-card-details-old-price {
-                        font-size: 2vw;
-                        line-height: 2.5vw;
+                        font-size: 24px;
+                        line-height: 29.76px;
                     }
                 }
 
                 .product-card-details-button-add {
-                    padding: 1.25vw 1.33vw;
-                    gap: 0.83vw;
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;
+                    padding: 15px 16px;
+                    gap: 10px;
+                    font-size: 20px;
+                    line-height: 26px;
 
                     .wait-svg {
-                        width: 2vw;
-                        height: 2vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }

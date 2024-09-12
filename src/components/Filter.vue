@@ -64,7 +64,7 @@ const store = useStore()
 
 const props = defineProps({
     closeFilter: Function,
-    applyAndCloseFilter: Function    
+    applyAndCloseFilter: Function  
 });
 
 const categories = ref([

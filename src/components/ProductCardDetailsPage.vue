@@ -76,7 +76,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { useStore } from "vuex"
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
 import { formatPrice } from "../utils/formatPrice"
 
 
@@ -85,7 +85,8 @@ const props = defineProps({
     image: String,
     longDescription: String,
     currentPrice: Number,
-    oldPrice: Number
+    oldPrice: Number,
+    showToast: Function
 })
 
 const store = useStore()
@@ -109,7 +110,7 @@ const closeDetails = () => {
 
 const addProduct = () => {
     buttonName.value = 'Ждём...';
-    alert('Товар добавлен в корзину!');
+    props.showToast({ severity: 'success', summary: 'Успешно!', detail: 'Товар добавлен в корзину', life: 5000 });
     buttonName.value = '';
 }
 </script>

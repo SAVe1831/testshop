@@ -45,13 +45,14 @@ import { useStore } from 'vuex'
 const store = useStore();
 
 const props = defineProps({
-    openAuth: Function
+    openAuth: Function,
+    showToast: Function
 })
 
 const isAuth = computed(() => store.state.authModule.isAuth);
 
 const authExit = () => {
   store.commit('setAuth', false);
-  alert('Теперь Вы не авторизованы!');
+  props.showToast({ severity: 'success', summary: 'Всего хорошего!', detail: 'Вы вышли из аккаунта', life: 5000 });
 }
 </script>

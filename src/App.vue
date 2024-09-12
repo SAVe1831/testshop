@@ -1,21 +1,22 @@
 <template>
-  <router-view v-if="isRouterUse"></router-view>
+  <Toast position="top-right" :style="{ backgroundColor: severity === 'success' ? '#8cf594' : '#f07171' }" />
+  <router-view v-if="isRouterUse" :show-toast="showToast"></router-view>
   <div v-else>
     <Filter v-if="filterOpen" :close-filter="closeFilter" :apply-and-close-filter="applyAndCloseFilter" />
     <div v-else>
-      <Auth v-if="authOpen" :close-auth="closeAuth" />
-      <ProductCardDetailsPopup v-if="isProductCardDetailsPopup" />
-      <Header :open-auth="openAuth" />
+      <Auth v-if="authOpen" :close-auth="closeAuth" :show-toast="showToast" />
+      <ProductCardDetailsPopup v-if="isProductCardDetailsPopup" :show-toast="showToast" />
+      <Header :open-auth="openAuth" :show-toast="showToast" />
       <BannerCatalog />
       <ListFilter :open-filter="openFilter" />
-      <BannerOffer />
+      <BannerOffer :show-toast="showToast" />
       <Footer />
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed, onMounted, onBeforeUnmount, ref } from "vue";
 import Filter from "./components/Filter.vue";
 import Auth from "./components/Auth.vue";
 import ProductCardDetailsPopup from "./components/ProductCardDetailsPopup.vue";
@@ -26,6 +27,16 @@ import BannerOffer from "./components/BannerOffer.vue";
 import Footer from "./components/Footer.vue";
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
+import Toast from 'primevue/toast';
+import { useToast } from 'primevue/usetoast';
+
+const toast = useToast();
+
+const severity = ref('');
+const showToast = (obj) => {
+    toast.add(obj);
+    severity.value = obj.severity;
+};
 
 const store = useStore();
 const router = useRouter();
@@ -59,4 +70,16 @@ const openAuth = () => {
 const closeAuth = () => {
   authOpen.value = false;
 };
+
+const handleBackButton = () => {
+    store.commit('setRouterUse', false);
+}
+
+onMounted(() => {
+    window.addEventListener('popstate', handleBackButton);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener('popstate', handleBackButton);
+});
 </script>

@@ -5,6 +5,37 @@ body {
     background-color: #FFFFFF;
     box-sizing: border-box;
 
+    .p-toast {
+        width: 280px;
+        font-size: 16px;
+        line-height: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+
+        .p-toast-message {
+            border: none;
+            margin: 0;
+            text-align: center;
+
+            .p-toast-message-content {
+                    justify-content: space-between;
+                    padding: 0;
+
+                    .p-icon.p-toast-message-icon {
+                        display: none;
+                    }
+    
+                    .p-toast-message-text {
+                        width: 250px;
+                    }
+                }
+            .p-toast-close-button {
+                top: 10px;
+                right: 0px;
+            }
+        }
+    }
     .header {
         background-color: #0B0B0B;
         width: 100%;
@@ -19,10 +50,6 @@ body {
             height: 24px;
             cursor: pointer;
         }
-        .exit-icon {
-            width: 24px;
-            height: 24px;
-        }
     
         .heading {
             color: #FFFFFF;
@@ -36,10 +63,9 @@ body {
     .banner-catalog {
         margin: 20px auto 0 auto;
         width: 87.5%;
-        height: auto;
         display: flex;
         flex-wrap: wrap;
-        gap: 5vw;
+        gap: 16px;
     
         .banner {
             width: 100%;
@@ -49,7 +75,6 @@ body {
 
         .big-sale {
             width: 100%;
-            height: auto;
             min-height: 154px;
             border-radius: 16px;
             padding: 5vw 0;
@@ -58,12 +83,11 @@ body {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            box-sizing: border-box;
     
             .text {
                 width: 77.5%;
                 height: auto;
-                gap: 1.25vw;
+                gap: 4px;
                 display: flex;
                 flex-direction: column;
                 color: #FFFFFF;
@@ -86,16 +110,16 @@ body {
                 line-height: 9.4vw;
                 font-weight: 700;
                 color: #FFFFFF;
-                margin: 5vw 0;
+                margin: 16px 0;
             }
             .time {
                 width: auto;
                 height: auto;
-                margin-top: 7.5vw;
+                margin-top: 24px;
                 display: flex;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                gap: 5vw;
+                gap: 16px;
                 color: #FFFFFF;
 
                 &__days, &__hours, &__minutes, &__seconds {
@@ -103,7 +127,7 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    gap: 1.25vw;
+                    gap: 4px;
 
                     &__number {
                         font-size: 7.5vw;
@@ -123,12 +147,11 @@ body {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            gap: 5vw;
+            gap: 16px;
 
             .clothes, .shoes, .equipment {
                 width: 100%;
                 height: 48.1vw;
-                min-height: 154px;
                 border-radius: 16px;
                 background-color: #F5F5F5;
                 display: flex;
@@ -173,8 +196,8 @@ body {
         width: 87.5%;
         height: auto;
         min-height: 338px;
-        margin: 20vw auto 0 auto;
-        gap: 7.5vw;
+        margin: 64px auto 0 auto;
+        gap: 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -342,7 +365,7 @@ body {
                     font-size: 4.4vw;
                     line-height: 5.7vw;
                     font-weight: 400;
-                    color: #0B0B0B;
+                    color: #0b0b0b;
                 }
             }
             .offer-form-inputs-container {
@@ -432,6 +455,7 @@ body {
                             z-index: 1;
                             overflow-y: auto;
                             height: 50vw;
+                            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 
                             .select-item {
                                 padding: 5vw;
@@ -533,16 +557,20 @@ body {
                 .file-upload-text {
                     display: flex;
                     align-items: center;
+                    gap: 5px;
 
                     .photo-file-name {
+                        max-width: 85%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         font-size: 4.4vw;
                         line-height: 5.7vw;
                         font-weight: 400;
                         color: #0B0B0B;
-
-                        .remove-photo-file {
-                            cursor: pointer;
-                        }
+                    }
+                    .svg-remove {
+                        cursor: pointer;
                     }
                 }
 
@@ -570,6 +598,11 @@ body {
                     background-color: #61AFD2;
                 }
             }
+        }
+        .offer-picture {
+            width: 646px;
+            height: 628px;
+            display: none;
         }
     }
     .footer {

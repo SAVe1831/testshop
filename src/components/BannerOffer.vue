@@ -70,12 +70,13 @@
                 <div class="file-upload-text">
                     <span class="photo-file-name">{{ photoFile ? photoFile.name : '' }}</span>
                     <svg v-if="photoFile" @click="removePhotoFile" class="svg-remove" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.75 5.25L5.25 18.75M18.75 18.75L5.25 5.25" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.75 5.25L5.25 18.75M18.75 18.75L5.25 5.25"  transform="scale(0.8)" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>                
                 <button type="button" class="offer-form-submit" @click="formSubmit"><img v-if="buttonName === `Ждём...`" src="/wait.svg" alt="" class="wait-svg">{{ buttonName || `Отправить` }}</button>
             </div>
         </form>
+        <img class="offer-picture" src="/offer-picture.png" alt="">
     </div>
 </template>
 
@@ -85,6 +86,10 @@ import useVuelidate from '@vuelidate/core'
 import { minLength, maxLength, helpers, numeric } from '@vuelidate/validators'
 import { computed } from 'vue';
 import { useStore } from 'vuex';
+
+const props = defineProps({
+    showToast: Function
+})
 
 const store = useStore();
 
@@ -171,14 +176,14 @@ const removePhotoFile = () => {
 const formSubmit = () => {
     if (nameRef.value && phoneNumberRef.value && !showError.value && photoFile.value && selectedDate.value && selectedTime.value && rating.value) {
         buttonName.value = 'Ждём...';
-        alert(`${nameRef.value}, ваша заявка принята. Мы скоро свяжемся с вами.`);
+        props.showToast({ severity: 'success', summary: 'Ваша заявка принята!', detail: 'Мы скоро свяжемся с вами', life: 5000 });
         nameRef.value = '';
         phoneNumberRef.value = '';
         photoFile.value = null;
         store.dispatch('resetDateTime');
         rating.value = '';
     } else {
-        alert('Заполните, пожалуйста, все поля формы.');
+        props.showToast({ severity: 'error', summary: 'Заявка отклонена!', detail: 'Заполните все поля формы', life: 5000 });
     }
     buttonName.value = '';
 };

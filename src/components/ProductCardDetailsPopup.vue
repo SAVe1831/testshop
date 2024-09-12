@@ -100,6 +100,10 @@ import { useStore } from "vuex"
 import { computed, ref } from 'vue'
 import { formatPrice } from "../utils/formatPrice"
 
+const props = defineProps({
+    showToast: Function
+})
+
 const store = useStore()
 
 const isShoes = computed(() => store.getters.getIsShoes)
@@ -129,7 +133,7 @@ const setActiveImage = (index) => {
 
 const addProduct = () => {
     buttonName.value = 'Ждём...';
-    alert('Товар добавлен в корзину!');
+    props.showToast({ severity: 'success', summary: 'Успешно!', detail: 'Товар добавлен в корзину', life: 5000 });
     buttonName.value = '';
 }
 </script>

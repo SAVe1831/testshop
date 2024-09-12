@@ -5,6 +5,33 @@ body {
   background-color: #FFFFFF;
   box-sizing: border-box;
 }
+body .p-toast {
+  width: 280px;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+body .p-toast .p-toast-message {
+  border: none;
+  margin: 0;
+  text-align: center;
+}
+body .p-toast .p-toast-message .p-toast-message-content {
+  justify-content: space-between;
+  padding: 0;
+}
+body .p-toast .p-toast-message .p-toast-message-content .p-icon.p-toast-message-icon {
+  display: none;
+}
+body .p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+  width: 250px;
+}
+body .p-toast .p-toast-message .p-toast-close-button {
+  top: 10px;
+  right: 0px;
+}
 body .header {
   background-color: #0B0B0B;
   width: 100%;
@@ -19,10 +46,6 @@ body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
   height: 24px;
   cursor: pointer;
 }
-body .header .exit-icon {
-  width: 24px;
-  height: 24px;
-}
 body .header .heading {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -34,10 +57,9 @@ body .header .heading {
 body .banner-catalog {
   margin: 20px auto 0 auto;
   width: 87.5%;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 16px;
 }
 body .banner-catalog .banner {
   width: 100%;
@@ -46,7 +68,6 @@ body .banner-catalog .banner {
 }
 body .banner-catalog .big-sale {
   width: 100%;
-  height: auto;
   min-height: 154px;
   border-radius: 16px;
   padding: 5vw 0;
@@ -55,12 +76,11 @@ body .banner-catalog .big-sale {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
 }
 body .banner-catalog .big-sale .text {
   width: 77.5%;
   height: auto;
-  gap: 1.25vw;
+  gap: 4px;
   display: flex;
   flex-direction: column;
   color: #FFFFFF;
@@ -81,16 +101,16 @@ body .banner-catalog .big-sale .sale-end {
   line-height: 9.4vw;
   font-weight: 700;
   color: #FFFFFF;
-  margin: 5vw 0;
+  margin: 16px 0;
 }
 body .banner-catalog .big-sale .time {
   width: auto;
   height: auto;
-  margin-top: 7.5vw;
+  margin-top: 24px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 5vw;
+  gap: 16px;
   color: #FFFFFF;
 }
 body .banner-catalog .big-sale .time__days, body .banner-catalog .big-sale .time__hours, body .banner-catalog .big-sale .time__minutes, body .banner-catalog .big-sale .time__seconds {
@@ -98,7 +118,7 @@ body .banner-catalog .big-sale .time__days, body .banner-catalog .big-sale .time
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.25vw;
+  gap: 4px;
 }
 body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
   font-size: 7.5vw;
@@ -114,12 +134,11 @@ body .banner-catalog .catalog {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 16px;
 }
 body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
   width: 100%;
   height: 48.1vw;
-  min-height: 154px;
   border-radius: 16px;
   background-color: #F5F5F5;
   display: flex;
@@ -157,8 +176,8 @@ body .list-filter-container {
   width: 87.5%;
   height: auto;
   min-height: 338px;
-  margin: 20vw auto 0 auto;
-  gap: 7.5vw;
+  margin: 64px auto 0 auto;
+  gap: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -308,7 +327,7 @@ body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
   font-size: 4.4vw;
   line-height: 5.7vw;
   font-weight: 400;
-  color: #0B0B0B;
+  color: #0b0b0b;
 }
 body .offer-container .offer-form .offer-form-inputs-container {
   width: 100%;
@@ -392,6 +411,7 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-input
   z-index: 1;
   overflow-y: auto;
   height: 50vw;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items .select-item {
   padding: 5vw;
@@ -481,14 +501,19 @@ body .offer-container .offer-form .offer-form-inputs-container .file-upload-cont
 body .offer-container .offer-form .offer-form-inputs-container .file-upload-text {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .photo-file-name {
+  max-width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
   font-size: 4.4vw;
   line-height: 5.7vw;
   font-weight: 400;
   color: #0B0B0B;
 }
-body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .photo-file-name .remove-photo-file {
+body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .svg-remove {
   cursor: pointer;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit {
@@ -513,6 +538,11 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-submi
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit:active {
   background-color: #61AFD2;
+}
+body .offer-container .offer-picture {
+  width: 646px;
+  height: 628px;
+  display: none;
 }
 body .footer {
   width: 100%;
@@ -1003,21 +1033,28 @@ body .product-card-details .wait-svg {
   }
 }
 @media (min-width: 768px) {
+  body .p-toast {
+    width: 480px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+  body .p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+    width: 450px;
+  }
+  body .p-toast .p-toast-message .p-toast-close-button {
+    top: 20px;
+    right: 15px;
+  }
+  body .p-toast .p-toast-message .p-toast-close-button svg {
+    width: 24px;
+    height: 24px;
+  }
   body .header {
-    padding: 2.21vw 5.21vw;
-  }
-  body .header .heading {
-    font-size: 3.13vw;
-    line-height: 3.9vw;
-  }
-  body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
-    width: 2.6vw;
-    height: 2.6vw;
+    padding: 17px 40px;
   }
   body .banner-catalog {
     width: 89.6%;
     justify-content: space-between;
-    gap: 2.08vw;
   }
   body .banner-catalog .banner {
     width: 65.8%;
@@ -1036,21 +1073,18 @@ body .product-card-details .wait-svg {
     line-height: 5vw;
   }
   body .banner-catalog .big-sale .time {
-    gap: 0.78vw;
+    gap: 6px;
   }
-  body .banner-catalog .big-sale .time .time__days, body .banner-catalog .big-sale .time .time__hours, body .banner-catalog .big-sale .time .time__minutes, body .banner-catalog .big-sale .time .time__seconds {
-    gap: 0.52vw;
-  }
-  body .banner-catalog .big-sale .time .time__days__number, body .banner-catalog .big-sale .time .time__hours__number, body .banner-catalog .big-sale .time .time__minutes__number, body .banner-catalog .big-sale .time .time__seconds__number {
+  body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
     font-size: 4.2vw;
     line-height: 5vw;
   }
-  body .banner-catalog .big-sale .time .time__days__text, body .banner-catalog .big-sale .time .time__hours__text, body .banner-catalog .big-sale .time .time__minutes__text, body .banner-catalog .big-sale .time .time__seconds__text {
+  body .banner-catalog .big-sale .time__days__text, body .banner-catalog .big-sale .time__hours__text, body .banner-catalog .big-sale .time__minutes__text, body .banner-catalog .big-sale .time__seconds__text {
     font-size: 1.8vw;
     line-height: 2.4vw;
   }
   body .banner-catalog .catalog {
-    gap: 2.08vw;
+    justify-content: space-between;
   }
   body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
     width: 31.7%;
@@ -1077,18 +1111,19 @@ body .product-card-details .wait-svg {
   }
   body .list-filter-container {
     width: 89.6%;
-    margin: 9.37vw auto 0 auto;
-    gap: 3.12vw;
+    min-height: 484px;
+    margin: 72px auto 0 auto;
+    gap: 24px;
   }
   body .list-filter-container .heading {
-    font-size: 3.13vw;
-    line-height: 3.9vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .list-filter-container .list-filter .filter-button {
     display: none;
   }
   body .list-filter-container .list-filter {
-    gap: 3.12vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .list .p-carousel .p-carousel-item {
     flex: 0 0 33%;
@@ -1134,7 +1169,7 @@ body .product-card-details .wait-svg {
     align-items: center;
     justify-content: space-between;
     padding: 1.3vw 2.08vw;
-    gap: 2.5vw;
+    gap: 16px;
     cursor: pointer;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
@@ -1163,10 +1198,10 @@ body .product-card-details .wait-svg {
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item {
     width: 100%;
     height: 5.21vw;
-    padding: 1.3vw 1.3vw;
+    padding: 1.3vw;
     display: flex;
     align-items: center;
-    gap: 1.04vw;
+    gap: 8px;
     font-size: 1.56vw;
     font-weight: 400;
     cursor: pointer;
@@ -1289,6 +1324,7 @@ body .product-card-details .wait-svg {
     min-height: 24px;
     gap: 8px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     font-size: 1.82vw;
     line-height: 2.34vw;
@@ -1363,31 +1399,32 @@ body .product-card-details .wait-svg {
     width: 89.6%;
     height: auto;
     min-height: 452px;
-    margin: 9.37vw auto 0 auto;
-    padding: 3.12vw;
-    gap: 3.12vw;
+    margin: 72px auto 0 auto;
+    padding: 24px;
+    gap: 24px;
   }
   body .offer-container .offer-form {
-    gap: 3.12vw;
+    gap: 24px;
   }
   body .offer-container .offer-form .offer-form-text {
-    gap: 2.08vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-heading {
-    font-size: 3.12vw;
-    line-height: 3.91vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
     font-size: 1.82vw;
     line-height: 2.34vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container {
-    gap: 3.12vw;
+    gap: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs {
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2.08vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper {
     width: 48.7%;
@@ -1395,7 +1432,7 @@ body .product-card-details .wait-svg {
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .offer-form-input {
     width: 100%;
-    gap: 1.32vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.34vw;
   }
@@ -1406,7 +1443,7 @@ body .product-card-details .wait-svg {
     width: 48.7%;
     height: 5.21vw;
     padding: 1.43vw 2.08vw;
-    gap: 1.32vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.34vw;
   }
@@ -1416,7 +1453,7 @@ body .product-card-details .wait-svg {
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected-icon {
     padding: 1.43vw 2.08vw;
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected {
     font-size: 1.82vw;
@@ -1430,37 +1467,37 @@ body .product-card-details .wait-svg {
     height: 20.83vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .svg-dropdown {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating {
     flex-direction: row;
     width: 100%;
     min-height: 20px;
-    gap: 3.12vw;
+    gap: 24px;
     font-size: 1.82vw;
     line-height: 2.34vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio {
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-mark {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input:checked + .radio-mark::after {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 24px;
+    height: 24px;
     border: 0.91vw solid #61AFD2;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container {
     min-height: 40px;
     padding: 1.3vw 2.08vw;
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .svg-clip {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .file-upload-label {
     font-size: 1.82vw;
@@ -1478,70 +1515,72 @@ body .product-card-details .wait-svg {
     width: 48.8%;
     min-height: 40px;
     padding: 1.43vw 2.08vw;
-    gap: 1.32vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.34vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit .wait-svg {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 20px;
+    height: 20px;
   }
   body .footer {
-    margin: 9.37vw auto 0 auto;
-    padding: 2.83vw 4.91vw;
-    font-size: 1.82vw;
-    line-height: 2.34vw;
+    margin: 72px auto 0 auto;
+    padding: 23px 40px;
+    font-size: 14px;
+    line-height: 18.2px;
     text-align: end;
   }
   body .auth-container-step-first, body .auth-container-step-second {
-    width: 62.5%;
-    height: 30.73vw;
-    left: 18.75%;
-    top: 39.1vw;
-    padding: 4.17vw;
+    width: 480px;
+    margin-left: calc((100% - 480px) / 2);
+    height: auto;
+    top: 300px;
+    bottom: auto;
+    padding: 32px;
+    gap: 24px;
     border-radius: 16px;
   }
   body .auth-container-step-first .auth-title, body .auth-container-step-second .auth-title {
-    font-size: 2.6vw;
-    line-height: 3.65vw;
+    font-size: 20px;
+    line-height: 28px;
   }
   body .auth-container-step-first .svg-close-auth, body .auth-container-step-second .svg-close-auth {
-    width: 3.12vw;
-    height: 3.12vw;
-    top: 2.08vw;
-    right: 2.08vw;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: 16px;
   }
   body .auth-container-step-first .auth-input-phone, body .auth-container-step-first .auth-input-code, body .auth-container-step-second .auth-input-phone, body .auth-container-step-second .auth-input-code {
-    height: 6.25vw;
-    padding: 1.69vw 2.08vw;
-    gap: 1.3vw;
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    height: 48px;
+    padding: 13px 16px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 21.6px;
     font-weight: 400;
   }
   body .auth-container-step-first .auth-input-phone::placeholder, body .auth-container-step-first .auth-input-code::placeholder, body .auth-container-step-second .auth-input-phone::placeholder, body .auth-container-step-second .auth-input-code::placeholder {
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .auth-container-step-first .form-error, body .auth-container-step-second .form-error {
-    font-size: 2.34vw;
+    font-size: 18px;
   }
   body .auth-container-step-first .button-code-submit, body .auth-container-step-first .button-agree, body .auth-container-step-first .button-code-submit-disabled, body .auth-container-step-first .button-agree-disabled, body .auth-container-step-second .button-code-submit, body .auth-container-step-second .button-agree, body .auth-container-step-second .button-code-submit-disabled, body .auth-container-step-second .button-agree-disabled {
     min-height: 48px;
-    padding: 1.69vw 2.08vw;
-    gap: 1.3vw;
+    padding: 13px 16px;
+    gap: 10px;
     border-radius: 8px;
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    font-size: 18px;
+    line-height: 21.6px;
     font-weight: 400;
   }
   body .auth-container-step-first .code-timer, body .auth-container-step-first .code-send-again, body .auth-container-step-second .code-timer, body .auth-container-step-second .code-send-again {
-    font-size: 1.82vw;
-    line-height: 2.34vw;
+    font-size: 14px;
+    line-height: 18px;
   }
   body .auth-container-step-first .wait-svg, body .auth-container-step-second .wait-svg {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 20px;
+    height: 20px;
   }
   body .popup-background {
     position: fixed;
@@ -1559,7 +1598,7 @@ body .product-card-details .wait-svg {
     min-height: 560px;
     background-color: #FFFFFF;
     position: fixed;
-    top: 29.3%;
+    top: 300px;
     left: 5.2%;
     z-index: 2;
     border-radius: 16px;
@@ -1575,17 +1614,17 @@ body .product-card-details .wait-svg {
     padding: 0;
   }
   body .popup-content .svg-close-popup {
-    width: 3.12vw;
-    height: 3.12vw;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 2.08vw;
-    right: 2.08vw;
+    top: 16px;
+    right: 16px;
   }
   body .popup-content .photos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2.08vw;
+    gap: 16px;
   }
   body .popup-content .photos .photo-zoom {
     width: 100%;
@@ -1600,7 +1639,7 @@ body .product-card-details .wait-svg {
   body .popup-content .photos .photo-list {
     width: 100%;
     height: 14.32vw;
-    gap: 2.08vw;
+    gap: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1619,78 +1658,77 @@ body .product-card-details .wait-svg {
     opacity: 1;
   }
   body .popup-content .product-card-details {
-    gap: 2.6vw;
+    gap: 20px;
   }
   body .popup-content .product-card-details .product-card-details-title {
-    font-size: 2.6vw;
-    line-height: 3.65vw;
+    font-size: 20px;
+    line-height: 28px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-text {
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list {
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list .product-card-details-colors-list-item {
     width: 4.17vw;
     height: 4.17vw;
   }
   body .popup-content .product-card-details .product-card-details-size {
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-text {
-    font-size: 2.6vw;
-    line-height: 3.65vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise {
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise .product-card-details-size-choise-item {
-    font-size: 2.6vw;
-    line-height: 3.39vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-description {
-    gap: 1.04vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-description .product-card-details-description-title, body .popup-content .product-card-details .product-card-details-description .product-card-details-description-text {
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .popup-content .product-card-details .product-card-details-price {
-    gap: 2.08vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-price .product-card-details-current-price, body .popup-content .product-card-details .product-card-details-price .product-card-details-old-price {
-    font-size: 2.6vw;
-    line-height: 3.65vw;
+    font-size: 20px;
+    line-height: 28px;
   }
   body .popup-content .product-card-details .product-card-details-button-add {
     min-height: 48px;
-    padding: 1.69vw 2.08vw;
-    gap: 1.3vw;
-    font-size: 2.34vw;
-    line-height: 2.8vw;
+    padding: 13px 16px;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .popup-content .product-card-details .product-card-details-button-add .wait-svg {
-    width: 3.12vw;
-    height: 3.12vw;
+    width: 24px;
+    height: 24px;
   }
 }
 @media (min-width: 992px) {
   body .header {
-    padding: 2.11vw 4.03vw;
+    padding: 21px 40px;
   }
   body .header .heading {
-    font-size: 3.23vw;
+    font-size: 32px;
+    line-height: 38px;
   }
   body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
-    width: 3.23vw;
-    height: 3.23vw;
+    width: 32px;
+    height: 32px;
   }
   body .banner-catalog {
     width: 91.94%;
-    justify-content: space-between;
-    gap: 1.6vw;
   }
   body .banner-catalog .banner {
     width: 66.11%;
@@ -1698,33 +1736,33 @@ body .product-card-details .wait-svg {
   }
   body .banner-catalog .big-sale {
     width: 32.1%;
-    min-height: 400px;
-    padding: 4.03vw 0;
+    min-height: 500px;
+    padding: 32px 0;
+  }
+  body .banner-catalog .big-sale .text {
+    gap: 8px;
   }
   body .banner-catalog .big-sale .text .text-up {
     font-size: 2.02vw;
-    line-height: 2.83vw;
+    line-height: 2.82vw;
   }
   body .banner-catalog .big-sale .text .text-down {
-    font-size: 4.04vw;
+    font-size: 4.03vw;
     line-height: 4.84vw;
   }
   body .banner-catalog .big-sale .time {
-    gap: 0.81vw;
+    gap: 8px;
   }
-  body .banner-catalog .big-sale .time .time__days, body .banner-catalog .big-sale .time .time__hours, body .banner-catalog .big-sale .time .time__minutes, body .banner-catalog .big-sale .time .time__seconds {
-    gap: 0.81vw;
+  body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
+    font-size: 4.2vw;
+    line-height: 5vw;
   }
-  body .banner-catalog .big-sale .time .time__days__number, body .banner-catalog .big-sale .time .time__hours__number, body .banner-catalog .big-sale .time .time__minutes__number, body .banner-catalog .big-sale .time .time__seconds__number {
-    font-size: 4.04vw;
-    line-height: 4.84vw;
-  }
-  body .banner-catalog .big-sale .time .time__days__text, body .banner-catalog .big-sale .time .time__hours__text, body .banner-catalog .big-sale .time .time__minutes__text, body .banner-catalog .big-sale .time .time__seconds__text {
-    font-size: 1.81vw;
-    line-height: 2.18vw;
+  body .banner-catalog .big-sale .time__days__text, body .banner-catalog .big-sale .time__hours__text, body .banner-catalog .big-sale .time__minutes__text, body .banner-catalog .big-sale .time__seconds__text {
+    font-size: 1.8vw;
+    line-height: 2.4vw;
   }
   body .banner-catalog .catalog {
-    gap: 1.6vw;
+    gap: 16px;
   }
   body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
     width: 32.13%;
@@ -1750,46 +1788,52 @@ body .product-card-details .wait-svg {
   body .list-filter-container {
     width: 91.94%;
     height: 71.17vw;
-    margin: 7.26vw auto 0 auto;
-    gap: 3.23vw;
+    margin: 80px auto 0 auto;
+    gap: 32px;
   }
   body .list-filter-container .heading {
-    font-size: 3.23vw;
-    line-height: 3.88vw;
+    font-size: 32px;
+    line-height: 38.4px;
   }
   body .list-filter-container .list-filter {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .filter {
     width: 100%;
-    height: 4.84vw;
+    height: 48px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category {
     width: 71.4%;
-    height: 4.84vw;
+    height: 48px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon {
-    height: 4.84vw;
+    height: 48px;
     padding: 1.21vw 1.61vw;
-    gap: 0.81vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .svg-dropdown {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item {
+    height: 4.54vw;
+    font-size: 1.82vw;
+    line-height: 2.18vw;
+    padding: 0.71vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-price {
     width: 28.68%;
-    height: 4.84vw;
+    height: 48px;
     padding: 1.31vw 2.42vw;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value {
-    gap: 0.81vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value .price-value-box {
     font-size: 2.02vw;
@@ -1797,8 +1841,8 @@ body .product-card-details .wait-svg {
   }
   body .list-filter-container .list-filter .filter .in-stock {
     width: 37.83%;
-    height: 2.83vw;
-    gap: 1.2vw;
+    height: 48px;
+    gap: 12px;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
@@ -1816,12 +1860,12 @@ body .product-card-details .wait-svg {
     gap: 24px;
   }
   body .list-filter-container .filter-selected .filter-selected-category .svg-remove-icon {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .filter-selected .filter-selected-price .svg-remove-icon {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter {
     position: relative;
@@ -1848,7 +1892,7 @@ body .product-card-details .wait-svg {
     min-height: 58.18vw;
   }
   body .list-filter-container .list-filter .list .p-carousel-item-list {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .list .p-carousel .p-carousel-item {
     flex: 0 0 32.13%;
@@ -1868,43 +1912,43 @@ body .product-card-details .wait-svg {
     gap: 16px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-color .product-card-details-colors-list .product-card-details-colors-list-item {
-    width: 3.2vw;
-    height: 3.2vw;
+    width: 32px;
+    height: 32px;
   }
   body .offer-container {
     width: 91.94%;
     height: auto;
     min-height: 576px;
-    margin: 8.06vw auto 0 auto;
-    padding: 4.03vw;
-    gap: 4.03vw;
+    margin: 80px auto 0 auto;
+    padding: 40px;
+    gap: 40px;
   }
   body .offer-container .offer-form {
-    gap: 4.03vw;
+    gap: 40px;
   }
   body .offer-container .offer-form .offer-form-text {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-heading {
-    font-size: 3.25vw;
-    line-height: 3.9vw;
+    font-size: 32px;
+    line-height: 38.4px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
-    font-size: 1.82vw;
-    line-height: 2.18vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .offer-container .offer-form .offer-form-inputs-container {
-    gap: 2.42vw;
+    gap: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper {
     width: 48.7%;
     min-height: 40px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .offer-form-input {
-    gap: 1.01vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.18vw;
     padding: 1.31vw 1.61vw;
@@ -1916,7 +1960,7 @@ body .product-card-details .wait-svg {
     width: 48.7%;
     height: 4.84vw;
     padding: 0;
-    gap: 1.32vw;
+    gap: 13px;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
@@ -1927,7 +1971,7 @@ body .product-card-details .wait-svg {
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected-icon {
     min-height: 48px;
     padding: 1.21vw 1.61vw;
-    gap: 0.81vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected {
     font-size: 1.82vw;
@@ -1941,34 +1985,34 @@ body .product-card-details .wait-svg {
     height: 20.83vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .svg-dropdown {
-    width: 2.6vw;
-    height: 2.6vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating {
-    gap: 2.42vw;
+    gap: 24px;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio {
-    gap: 1.21vw;
+    gap: 12px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-mark {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input:checked + .radio-mark::after {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
     border: 0.91vw solid #61AFD2;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container {
     min-height: 48px;
     padding: 1.21vw 1.61vw;
-    gap: 0.81vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .svg-clip {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .file-upload-label {
     font-size: 1.82vw;
@@ -1979,93 +2023,45 @@ body .product-card-details .wait-svg {
     line-height: 2.18vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .svg-remove {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit {
     width: 48.8%;
     min-height: 48px;
     padding: 1.31vw 1.61vw;
-    gap: 1.01vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit .wait-svg {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
   body .footer {
-    margin: 8.07vw auto 0 auto;
-    padding: 2.92vw 4.03vw;
-    font-size: 1.82vw;
-    line-height: 2.18vw;
-  }
-  body .auth-container-step-first, body .auth-container-step-second {
-    width: 48.4%;
-    height: 23.79vw;
-    left: 25.8%;
-    top: 30.3vw;
-    padding: 3.23vw;
-  }
-  body .auth-container-step-first .auth-title, body .auth-container-step-second .auth-title {
-    font-size: 2.02vw;
-    line-height: 2.82vw;
-  }
-  body .auth-container-step-first .svg-close-auth, body .auth-container-step-second .svg-close-auth {
-    width: 2.42vw;
-    height: 2.42vw;
-    top: 1.61vw;
-    right: 1.61vw;
-  }
-  body .auth-container-step-first .auth-input-phone, body .auth-container-step-first .auth-input-code, body .auth-container-step-second .auth-input-phone, body .auth-container-step-second .auth-input-code {
-    height: 4.84vw;
-    padding: 1.31vw 1.61vw;
-    gap: 1.01vw;
-    font-size: 1.82vw;
-    line-height: 2.18vw;
-  }
-  body .auth-container-step-first .auth-input-phone::placeholder, body .auth-container-step-first .auth-input-code::placeholder, body .auth-container-step-second .auth-input-phone::placeholder, body .auth-container-step-second .auth-input-code::placeholder {
-    font-size: 1.82vw;
-    line-height: 2.18vw;
-  }
-  body .auth-container-step-first .form-error, body .auth-container-step-second .form-error {
-    font-size: 1.82vw;
-  }
-  body .auth-container-step-first .button-code-submit, body .auth-container-step-first .button-agree, body .auth-container-step-first .button-code-submit-disabled, body .auth-container-step-first .button-agree-disabled, body .auth-container-step-second .button-code-submit, body .auth-container-step-second .button-agree, body .auth-container-step-second .button-code-submit-disabled, body .auth-container-step-second .button-agree-disabled {
-    min-height: 48px;
-    padding: 1.31vw 1.61vw;
-    gap: 1.01vw;
-    font-size: 1.82vw;
-    line-height: 2.18vw;
-  }
-  body .auth-container-step-first .code-timer, body .auth-container-step-first .code-send-again, body .auth-container-step-second .code-timer, body .auth-container-step-second .code-send-again {
-    font-size: 1.82vw;
-    line-height: 2.18vw;
-  }
-  body .auth-container-step-first .wait-svg, body .auth-container-step-second .wait-svg {
-    width: 2.42vw;
-    height: 2.42vw;
+    margin: 80px auto 0 auto;
+    padding: 29px 40px;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .popup-content {
     width: 91.93%;
     height: auto;
     min-height: 730px;
-    top: 21.45%;
+    top: 300px;
     left: 4.033%;
-    padding: 3.23vw;
-    gap: 3.23vw;
+    padding: 32px;
+    gap: 32px;
   }
   body .popup-content .svg-close-popup {
-    width: 3.12vw;
-    height: 3.12vw;
-    top: 2.08vw;
-    right: 2.08vw;
+    width: 24px;
+    height: 24px;
   }
   body .popup-content .photos {
     width: 45.75%;
     height: auto;
     padding: 0;
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .photos .photo-zoom {
     width: 100%;
@@ -2080,7 +2076,7 @@ body .product-card-details .wait-svg {
   body .popup-content .photos .photo-list {
     width: 100%;
     height: 13.1vw;
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .photos .photo-list .photo-list-item {
     width: 30.4%;
@@ -2090,49 +2086,49 @@ body .product-card-details .wait-svg {
     width: 50.47%;
     height: auto;
     padding: 0;
-    gap: 2.42vw;
+    gap: 24px;
   }
   body .popup-content .product-card-details .product-card-details-title {
-    font-size: 2.02vw;
-    line-height: 2.82vw;
+    font-size: 20px;
+    line-height: 28px;
   }
   body .popup-content .product-card-details .product-card-details-colors {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-text {
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list {
-    gap: 0.81vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list .product-card-details-colors-list-item {
-    width: 3.23vw;
-    height: 3.23vw;
+    width: 32px;
+    height: 32px;
   }
   body .popup-content .product-card-details .product-card-details-size {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-text {
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise .product-card-details-size-choise-item {
     font-size: 2.02vw;
     line-height: 2.62vw;
   }
   body .popup-content .product-card-details .product-card-details-description {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-description .product-card-details-description-title, body .popup-content .product-card-details .product-card-details-description .product-card-details-description-text {
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .popup-content .product-card-details .product-card-details-price {
-    gap: 1.61vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-price .product-card-details-current-price, body .popup-content .product-card-details .product-card-details-price .product-card-details-old-price {
     font-size: 2.02vw;
@@ -2140,32 +2136,39 @@ body .product-card-details .wait-svg {
   }
   body .popup-content .product-card-details .product-card-details-button-add {
     padding: 1.31vw 1.61vw;
-    gap: 1.01vw;
+    gap: 10px;
     font-size: 1.82vw;
     line-height: 2.18vw;
   }
   body .popup-content .product-card-details .product-card-details-button-add .wait-svg {
-    width: 2.42vw;
-    height: 2.42vw;
+    width: 24px;
+    height: 24px;
   }
 }
 @media (min-width: 1200px) {
+  body .p-toast {
+    width: 780px;
+    font-size: 32px;
+    line-height: 70px;
+  }
+  body .p-toast .p-toast-message .p-toast-message-content .p-toast-message-text {
+    width: 750px;
+  }
+  body .p-toast .p-toast-message .p-toast-close-button {
+    top: 20px;
+    right: 15px;
+  }
+  body .p-toast .p-toast-message .p-toast-close-button svg {
+    width: 32px;
+    height: 32px;
+  }
   body .header {
-    padding: 1.75vw 5.33vw;
-  }
-  body .header .heading {
-    font-size: 2.67vw;
-    line-height: 3.2vw;
-  }
-  body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
-    width: 2.67vw;
-    height: 2.67vw;
+    padding: 21px 64px;
   }
   body .banner-catalog {
     width: 89.33%;
-    margin-top: 2vw;
-    justify-content: space-between;
-    gap: 2vw;
+    margin-top: 24px;
+    gap: 24px;
   }
   body .banner-catalog .banner {
     width: 65.95%;
@@ -2185,21 +2188,21 @@ body .product-card-details .wait-svg {
     line-height: 4.8vw;
   }
   body .banner-catalog .big-sale .time {
-    gap: 1.33vw;
+    gap: 16px;
   }
-  body .banner-catalog .big-sale .time .time__days, body .banner-catalog .big-sale .time .time__hours, body .banner-catalog .big-sale .time .time__minutes, body .banner-catalog .big-sale .time .time__seconds {
-    gap: 0.67vw;
+  body .banner-catalog .big-sale .time__days, body .banner-catalog .big-sale .time__hours, body .banner-catalog .big-sale .time__minutes, body .banner-catalog .big-sale .time__seconds {
+    gap: 8px;
   }
-  body .banner-catalog .big-sale .time .time__days__number, body .banner-catalog .big-sale .time .time__hours__number, body .banner-catalog .big-sale .time .time__minutes__number, body .banner-catalog .big-sale .time .time__seconds__number {
+  body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
     font-size: 4vw;
     line-height: 4.8vw;
   }
-  body .banner-catalog .big-sale .time .time__days__text, body .banner-catalog .big-sale .time .time__hours__text, body .banner-catalog .big-sale .time .time__minutes__text, body .banner-catalog .big-sale .time .time__seconds__text {
+  body .banner-catalog .big-sale .time__days__text, body .banner-catalog .big-sale .time__hours__text, body .banner-catalog .big-sale .time__minutes__text, body .banner-catalog .big-sale .time__seconds__text {
     font-size: 1.5vw;
     line-height: 1.8vw;
   }
   body .banner-catalog .catalog {
-    gap: 2vw;
+    gap: 24px;
   }
   body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
     width: 31.81%;
@@ -2226,54 +2229,71 @@ body .product-card-details .wait-svg {
   body .list-filter-container {
     width: 89.33%;
     height: 65.67vw;
-    margin: 7.26vw auto 0 auto;
-    gap: 2.67vw;
+    margin: 88px auto 0 auto;
+    gap: 32px;
   }
   body .list-filter-container .heading {
-    font-size: 3.33vw;
-    line-height: 4vw;
+    font-size: 40px;
+    line-height: 48px;
   }
   body .list-filter-container .list-filter {
-    gap: 2vw;
+    gap: 24px;
   }
   body .list-filter-container .list-filter .filter {
     width: 100%;
-    height: 4.67vw;
+    height: 56px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price {
-    gap: 2vw;
+    gap: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category {
     width: 74.4%;
-    height: 4.67vw;
+    height: 56px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon {
-    height: 4.67vw;
+    height: 56px;
     padding: 1.25vw 1.33vw;
-    gap: 0.67vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
     font-size: 1.67vw;
     line-height: 2.17vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .svg-dropdown {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items {
+    height: 16.7vw;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item {
+    height: 3.17vw;
+    font-size: 1.67vw;
+    line-height: 2.17vw;
+    padding: 0.58vw;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-checkbox.p-component {
+    width: 24px;
+    height: 24px;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-checkbox.p-component .p-checkbox-input {
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-price {
     width: 26.2%;
-    height: 4.67vw;
+    height: 56px;
     padding: 1.25vw 2vw;
-    gap: 0.83vw;
+    gap: 10px;
     font-size: 1.67vw;
     line-height: 2.17vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range {
     width: 33.33vw;
-    padding: 2vw;
+    padding: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value {
-    gap: 0.67vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value .price-value-box {
     font-size: 1.67vw;
@@ -2282,7 +2302,7 @@ body .product-card-details .wait-svg {
   body .list-filter-container .list-filter .filter .in-stock {
     width: 35.5%;
     height: 2.83vw;
-    gap: 1.33vw;
+    gap: 16px;
     font-size: 1.67vw;
     line-height: 2.17vw;
   }
@@ -2290,36 +2310,44 @@ body .product-card-details .wait-svg {
     width: 4.33vw;
     height: 2.33vw;
   }
+  body .list-filter-container .filter-selected .filter-selected-category {
+    font-size: 1.67vw;
+    line-height: 2.17vw;
+  }
   body .list-filter-container .filter-selected .filter-selected-category .svg-remove-icon {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
+  }
+  body .list-filter-container .filter-selected .filter-selected-price {
+    font-size: 1.67vw;
+    line-height: 2.17vw;
   }
   body .list-filter-container .filter-selected .filter-selected-price .svg-remove-icon {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .icon-prev, body .list-filter-container .list-filter .icon-next {
-    width: 4.67vw;
-    height: 4.67vw;
+    width: 56px;
+    height: 56px;
   }
   body .list-filter-container .list-filter .list {
     height: auto;
     min-height: 52.33vw;
   }
   body .list-filter-container .list-filter .list .p-carousel-item-list {
-    gap: 2vw;
+    gap: 24px;
   }
   body .list-filter-container .list-filter .list .p-carousel .p-carousel-item {
     flex: 0 0 31.82%;
   }
   body .list-filter-container .list-filter .list .product-card {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info {
-    gap: 1vw;
+    gap: 12px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-price {
-    gap: 1vw;
+    gap: 12px;
     width: 17vw;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .current-price, body .list-filter-container .list-filter .list .product-card .product-info .old-price, body .list-filter-container .list-filter .list .product-card .product-info .product-description {
@@ -2331,224 +2359,208 @@ body .product-card-details .wait-svg {
     line-height: 2.17vw;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-color .product-card-details-colors-list .product-card-details-colors-list-item {
-    width: 2.67vw;
-    height: 2.67vw;
+    width: 32px;
+    height: 32px;
   }
   body .offer-container {
     width: 89.33%;
     height: auto;
     min-height: 664px;
-    margin: 7.33vw auto 0 auto;
-    padding: 3.33vw;
+    margin: 88px auto 0 auto;
+    padding: 40px;
     display: flex;
-    gap: 3.33vw;
+    gap: 40px;
   }
   body .offer-container .offer-form {
     width: 67.24%;
-    gap: 3.33vw;
+    gap: 40px;
   }
   body .offer-container .offer-form .offer-form-text {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-heading {
-    font-size: 3.33vw;
-    line-height: 4vw;
+    font-size: 40px;
+    line-height: 48px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container {
-    gap: 2vw;
+    gap: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .offer-form-input {
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-    padding: 1.25vw 1.33vw;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 15px 16px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .form-error {
-    font-size: 1.17vw;
+    font-size: 14px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input {
-    height: 4.67vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    height: 56px;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input::placeholder {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected-icon {
-    padding: 1.25vw 1.33vw;
-    gap: 0.67vw;
+    padding: 15px 16px;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items .select-item {
-    padding: 1.25vw 1.33vw;
-    height: 4vw;
+    padding: 15px 16px;
+    height: 48px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items {
-    height: 16.67vw;
+    height: 200px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .svg-dropdown {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating {
-    gap: 2vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    gap: 24px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-mark {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input:checked + .radio-mark::after {
-    width: 2vw;
-    height: 2vw;
-    border: 0.75vw solid #61AFD2;
+    width: 24px;
+    height: 24px;
+    border: 9px solid #61AFD2;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container {
-    padding: 1.25vw 1.33vw;
-    gap: 0.67vw;
+    padding: 15px 16px;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .svg-clip {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .file-upload-label {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .photo-file-name {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .svg-remove {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit {
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    padding: 15px 16px;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit .wait-svg {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .footer {
-    margin: 7.33vw auto 0 auto;
-    padding: 2.25vw 5.33vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    margin: 88px auto 0 auto;
+    padding: 27px 64px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .auth-container-step-first, body .auth-container-step-second {
-    width: 41.7%;
-    height: auto;
-    min-height: 276px;
-    left: 29.15%;
-    top: 33.33vw;
-    bottom: auto;
-    padding: 3.33vw;
-    gap: 2vw;
+    width: 500px;
+    margin-left: calc((100% - 500px) / 2);
+    top: 400px;
+    padding: 40px;
   }
   body .auth-container-step-first .auth-title, body .auth-container-step-second .auth-title {
-    font-size: 2vw;
-    line-height: 2.5vw;
-  }
-  body .auth-container-step-first .svg-close-auth, body .auth-container-step-second .svg-close-auth {
-    width: 2vw;
-    height: 2vw;
-    top: 1.33vw;
-    right: 1.33vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .auth-container-step-first .auth-input-phone, body .auth-container-step-first .auth-input-code, body .auth-container-step-second .auth-input-phone, body .auth-container-step-second .auth-input-code {
-    height: 4.67vw;
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    height: 56px;
+    padding: 15px 16px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .auth-container-step-first .auth-input-phone::placeholder, body .auth-container-step-first .auth-input-code::placeholder, body .auth-container-step-second .auth-input-phone::placeholder, body .auth-container-step-second .auth-input-code::placeholder {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .auth-container-step-first .form-error, body .auth-container-step-second .form-error {
-    font-size: 1.67vw;
+    font-size: 18px;
   }
   body .auth-container-step-first .button-code-submit, body .auth-container-step-first .button-agree, body .auth-container-step-first .button-code-submit-disabled, body .auth-container-step-first .button-agree-disabled, body .auth-container-step-second .button-code-submit, body .auth-container-step-second .button-agree, body .auth-container-step-second .button-code-submit-disabled, body .auth-container-step-second .button-agree-disabled {
     min-height: 56px;
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    padding: 15px 16px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .auth-container-step-first .code-timer, body .auth-container-step-first .code-send-again, body .auth-container-step-second .code-timer, body .auth-container-step-second .code-send-again {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .auth-container-step-first .wait-svg, body .auth-container-step-second .wait-svg {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
   body .popup-content {
     width: 89.33%;
     height: auto;
     min-height: 600px;
-    top: 28.3%;
+    top: 400px;
     left: 5.334%;
-    padding: 3.33vw;
-    gap: 3.33vw;
+    padding: 40px;
+    gap: 40px;
   }
   body .popup-content .svg-close-popup {
-    width: 2vw;
-    height: 2vw;
-    top: 1.33vw;
-    right: 1.33vw;
+    width: 32px;
+    height: 32px;
   }
   body .popup-content .photos {
     width: 54.03%;
     height: 43.33vw;
-    gap: 1.33vw;
+    gap: 16px;
     flex-direction: row-reverse;
   }
   body .popup-content .photos .photo-zoom {
     width: 74.25%;
     height: auto;
-    border-radius: 16px;
   }
   body .popup-content .photos .photo-zoom .photo-zoom-image {
     width: 100%;
     height: 100%;
-    border-radius: 16px;
   }
   body .popup-content .photos .photo-list {
     width: 22.76%;
     height: 13.1vw;
-    gap: 1.61vw;
+    gap: 19px;
     flex-direction: column;
   }
   body .popup-content .photos .photo-list .photo-list-item {
     width: 100%;
   }
   body .popup-content .product-card-details {
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 41.93%;
     height: auto;
-    gap: 2vw;
+    gap: 24px;
   }
   body .popup-content .product-card-details .product-card-details-title {
     font-size: 2vw;
@@ -2609,22 +2621,22 @@ body .product-card-details .wait-svg {
 }
 @media (min-width: 1920px) {
   body .header {
-    padding: 1.09vw 6.67vw;
+    padding: 21px 128px;
   }
   body .header .heading {
-    font-size: 1.67vw;
-    line-height: 2vw;
+    font-size: 32px;
+    line-height: 38px;
   }
   body .header .auth-icon, body .header .exit-icon, body .header .cart-icon {
-    width: 1.67vw;
-    height: 1.67vw;
+    width: 32px;
+    height: 32px;
   }
   body .banner-catalog {
     width: 86.67%;
     height: 48.13vw;
-    margin-top: 1.25vw;
+    margin-top: 24px;
     flex-direction: column;
-    gap: 1.25vw;
+    gap: 24px;
   }
   body .banner-catalog .banner {
     width: 74.63%;
@@ -2633,12 +2645,13 @@ body .product-card-details .wait-svg {
   body .banner-catalog .big-sale {
     width: 23.92%;
     height: 48.13vw;
-    padding: 3.13vw 0;
+    padding: 64px 0;
     justify-content: flex-end;
     order: 2;
   }
   body .banner-catalog .big-sale .text {
     width: 100%;
+    gap: 16px;
   }
   body .banner-catalog .big-sale .text .text-up {
     font-size: 1.25vw;
@@ -2649,11 +2662,11 @@ body .product-card-details .wait-svg {
     line-height: 4vw;
   }
   body .banner-catalog .big-sale .time {
-    gap: 1.25vw;
+    gap: 24px;
     margin-top: 10.42vw;
   }
   body .banner-catalog .big-sale .time .time__days, body .banner-catalog .big-sale .time .time__hours, body .banner-catalog .big-sale .time .time__minutes, body .banner-catalog .big-sale .time .time__seconds {
-    gap: 0.42vw;
+    gap: 8px;
   }
   body .banner-catalog .big-sale .time .time__days__number, body .banner-catalog .big-sale .time .time__hours__number, body .banner-catalog .big-sale .time .time__minutes__number, body .banner-catalog .big-sale .time .time__seconds__number {
     font-size: 2.5vw;
@@ -2666,7 +2679,7 @@ body .product-card-details .wait-svg {
   body .banner-catalog .catalog {
     width: 64.68vw;
     height: 15.62vw;
-    gap: 1.25vw;
+    gap: 24px;
   }
   body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
     width: 20.72vw;
@@ -2695,115 +2708,110 @@ body .product-card-details .wait-svg {
   body .list-filter-container {
     width: 86.67%;
     height: 46.15vw;
-    margin: 5vw auto 0 auto;
-    gap: 2.08vw;
+    margin: 96px auto 0 auto;
+    gap: 40px;
   }
   body .list-filter-container .heading {
-    font-size: 2.5vw;
-    line-height: 3vw;
+    font-size: 48px;
+    line-height: 57.6px;
   }
   body .list-filter-container .list-filter {
     height: 41.04vw;
-    gap: 1.25vw;
-  }
-  body .list-filter-container .list-filter .filter {
-    width: 100%;
-    height: 2.92vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price {
     width: 33%;
-    gap: 1.25vw;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category {
     width: 72.5%;
-    height: 2.92vw;
+    height: 56px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon {
-    height: 2.92vw;
-    padding: 0.78vw 0.83vw;
-    gap: 0.42vw;
+    height: 56px;
+    padding: 15px 16px;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .svg-dropdown {
-    width: 1.25vw;
-    height: 1.25vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items {
-    height: 12.5vw;
+    height: 240px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item {
-    height: 2.6vw;
-    padding: 0.52vw 0.52vw;
-    gap: 0.42vw;
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    height: 50px;
+    padding: 10px;
+    gap: 8px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-component {
-    width: 1.67vw;
-    height: 1.67vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-checkbox-checked .p-checkbox-input {
-    width: 1.67vw;
-    height: 1.67vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-checkbox-checked .p-checkbox-box {
-    width: 1.67vw;
-    height: 1.67vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item .p-checkbox-checked .p-checkbox-box .p-checkbox-icon {
-    width: 1.69vw;
-    height: 1.69vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-price {
     width: 23.13%;
-    height: 2.92vw;
-    padding: 0.78vw 1.25vw;
-    gap: 0.52vw;
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    height: 56px;
+    padding: 15px 24px;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range {
-    width: 33.33vw;
-    padding: 2vw;
-    gap: 1.83vw;
+    width: 600px;
+    padding: 38px;
+    gap: 34px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value {
-    gap: 0.42vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range .price-value .price-value-box {
-    width: 10.42vw;
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    width: 180px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
   }
   body .list-filter-container .list-filter .filter .in-stock {
     width: 22.84%;
-    height: 1.46vw;
-    gap: 0.83vw;
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    height: 28px;
+    gap: 16px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .filter .in-stock .switch-svg {
     width: 2.71vw;
     height: 1.46vw;
   }
   body .list-filter-container .filter-selected .filter-selected-category {
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .filter-selected .filter-selected-category .svg-remove-icon {
-    width: 1.25vw;
-    height: 1.25vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .filter-selected .filter-selected-price {
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .filter-selected .filter-selected-price .svg-remove-icon {
-    width: 1.25vw;
-    height: 1.25vw;
+    width: 24px;
+    height: 24px;
   }
   body .list-filter-container .list-filter .icon-prev, body .list-filter-container .list-filter .icon-next {
     width: 2.92vw;
@@ -2818,235 +2826,106 @@ body .product-card-details .wait-svg {
   }
   body .list-filter-container .list-filter .list {
     height: auto;
-    min-height: 36.88vw;
+    min-height: 708px;
   }
   body .list-filter-container .list-filter .list .p-carousel-item-list {
-    gap: 1.25vw;
+    gap: 24px;
   }
   body .list-filter-container .list-filter .list .p-carousel .p-carousel-item {
     flex: 0 0 23.92%;
   }
   body .list-filter-container .list-filter .list .product-card {
-    gap: 0.83vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info {
-    gap: 0.62vw;
+    gap: 12px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-price {
-    gap: 0.62vw;
+    gap: 12px;
     width: 10vw;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .current-price, body .list-filter-container .list-filter .list .product-card .product-info .old-price, body .list-filter-container .list-filter .list .product-card .product-info .product-description {
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-size {
-    gap: 0.83vw;
+    gap: 16px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-size .product-card-details-size-choise {
-    font-size: 1.04vw;
-    line-height: 1.35vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-color .product-card-details-colors-list {
-    gap: 0.42vw;
+    gap: 8px;
   }
   body .list-filter-container .list-filter .list .product-card .product-info .product-color .product-card-details-colors-list .product-card-details-colors-list-item {
-    width: 1.67vw;
-    height: 1.67vw;
+    width: 32px;
+    height: 32px;
   }
   body .offer-container {
-    width: 89.33%;
-    height: auto;
-    min-height: 664px;
-    margin: 7.33vw auto 0 auto;
-    padding: 3.33vw;
+    width: 86.67%;
+    min-height: 708px;
+    margin: 96px auto 0 auto;
+    padding: 40px 64px;
     display: flex;
-    gap: 3.33vw;
+    justify-content: space-between;
   }
   body .offer-container .offer-form {
-    width: 67.24%;
-    gap: 3.33vw;
+    width: 50.78%;
+    margin-top: 25px;
+    gap: 40px;
   }
   body .offer-container .offer-form .offer-form-text {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-heading {
-    font-size: 3.33vw;
-    line-height: 4vw;
+    font-size: 48px;
+    line-height: 57.6px;
   }
   body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container {
-    gap: 2vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs {
-    gap: 1.33vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .offer-form-input {
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-    padding: 1.25vw 1.33vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input-wrapper .form-error {
-    font-size: 1.17vw;
+    font-size: 17px;
+    padding: 0;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input {
-    height: 4.67vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input::placeholder {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected-icon {
-    padding: 1.25vw 1.33vw;
-    gap: 0.67vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    gap: 8px;
   }
   body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items .select-item {
-    padding: 1.25vw 1.33vw;
-    height: 4vw;
+    height: 50px;
   }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items {
-    height: 16.67vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .svg-dropdown {
-    width: 2vw;
-    height: 2vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating {
-    gap: 2vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio {
-    gap: 1.33vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-mark {
-    width: 2vw;
-    height: 2vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input:checked + .radio-mark::after {
-    width: 2vw;
-    height: 2vw;
-    border: 0.75vw solid #61AFD2;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .file-upload-container {
-    padding: 1.25vw 1.33vw;
-    gap: 0.67vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .svg-clip {
-    width: 2vw;
-    height: 2vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .file-upload-container .file-upload-label {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .photo-file-name {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .file-upload-text .svg-remove {
-    width: 2vw;
-    height: 2vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit {
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .offer-container .offer-form .offer-form-inputs-container .offer-form-submit .wait-svg {
-    width: 2vw;
-    height: 2vw;
+  body .offer-container .offer-picture {
+    width: 646px;
+    height: 628px;
+    display: block;
   }
   body .footer {
-    margin: 7.33vw auto 0 auto;
-    padding: 2.25vw 5.33vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    margin: 96px auto 0 auto;
+    padding: 27px 128px;
   }
   body .auth-container-step-first, body .auth-container-step-second {
-    width: 41.7%;
-    height: auto;
-    min-height: 276px;
-    left: 29.15%;
-    top: 33.33vw;
-    bottom: auto;
-    padding: 3.33vw;
-    gap: 2vw;
-  }
-  body .auth-container-step-first .auth-title, body .auth-container-step-second .auth-title {
-    font-size: 2vw;
-    line-height: 2.5vw;
-  }
-  body .auth-container-step-first .svg-close-auth, body .auth-container-step-second .svg-close-auth {
-    width: 2vw;
-    height: 2vw;
-    top: 1.33vw;
-    right: 1.33vw;
-  }
-  body .auth-container-step-first .auth-input-phone, body .auth-container-step-first .auth-input-code, body .auth-container-step-second .auth-input-phone, body .auth-container-step-second .auth-input-code {
-    height: 4.67vw;
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .auth-container-step-first .auth-input-phone::placeholder, body .auth-container-step-first .auth-input-code::placeholder, body .auth-container-step-second .auth-input-phone::placeholder, body .auth-container-step-second .auth-input-code::placeholder {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .auth-container-step-first .form-error, body .auth-container-step-second .form-error {
-    font-size: 1.67vw;
-  }
-  body .auth-container-step-first .button-code-submit, body .auth-container-step-first .button-agree, body .auth-container-step-first .button-code-submit-disabled, body .auth-container-step-first .button-agree-disabled, body .auth-container-step-second .button-code-submit, body .auth-container-step-second .button-agree, body .auth-container-step-second .button-code-submit-disabled, body .auth-container-step-second .button-agree-disabled {
-    min-height: 56px;
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .auth-container-step-first .code-timer, body .auth-container-step-first .code-send-again, body .auth-container-step-second .code-timer, body .auth-container-step-second .code-send-again {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
-  }
-  body .auth-container-step-first .wait-svg, body .auth-container-step-second .wait-svg {
-    width: 2vw;
-    height: 2vw;
+    top: 500px;
   }
   body .popup-content {
-    width: 89.33%;
-    height: auto;
-    min-height: 600px;
-    top: 28.3%;
-    left: 5.334%;
-    padding: 3.33vw;
-    gap: 3.33vw;
-  }
-  body .popup-content .svg-close-popup {
-    width: 2vw;
-    height: 2vw;
-    top: 1.33vw;
-    right: 1.33vw;
+    width: 1192px;
+    height: 600px;
+    top: 10px;
+    left: 0;
+    margin-left: calc((100% - 1192px) / 2);
   }
   body .popup-content .photos {
-    width: 54.03%;
-    height: 43.33vw;
-    gap: 1.33vw;
+    width: 536px;
+    height: 520px;
+    gap: 16px;
     flex-direction: row-reverse;
   }
   body .popup-content .photos .photo-zoom {
-    width: 74.25%;
+    width: 398px;
     height: auto;
     border-radius: 16px;
   }
@@ -3056,75 +2935,72 @@ body .product-card-details .wait-svg {
     border-radius: 16px;
   }
   body .popup-content .photos .photo-list {
-    width: 22.76%;
-    height: 13.1vw;
-    gap: 1.61vw;
+    width: 122px;
+    height: 520px;
+    gap: 16px;
     flex-direction: column;
-  }
-  body .popup-content .photos .photo-list .photo-list-item {
-    width: 100%;
   }
   body .popup-content .product-card-details {
     justify-content: flex-start;
-    width: 41.93%;
+    width: 48.2%;
     height: auto;
-    gap: 2vw;
+    gap: 24px;
   }
   body .popup-content .product-card-details .product-card-details-title {
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .popup-content .product-card-details .product-card-details-colors {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-text {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list {
-    gap: 0.67vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-colors .product-card-details-colors-list .product-card-details-colors-list-item {
-    width: 2.67vw;
-    height: 2.67vw;
+    width: 32px;
+    height: 32px;
   }
   body .popup-content .product-card-details .product-card-details-size {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-text {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise {
-    gap: 1.33vw;
+    gap: 16px;
   }
   body .popup-content .product-card-details .product-card-details-size .product-card-details-size-choise .product-card-details-size-choise-item {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-description {
-    gap: 0.67vw;
+    gap: 8px;
   }
   body .popup-content .product-card-details .product-card-details-description .product-card-details-description-title, body .popup-content .product-card-details .product-card-details-description .product-card-details-description-text {
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-price {
-    gap: 1.61vw;
+    gap: 24px;
   }
   body .popup-content .product-card-details .product-card-details-price .product-card-details-current-price, body .popup-content .product-card-details .product-card-details-price .product-card-details-old-price {
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .popup-content .product-card-details .product-card-details-button-add {
-    padding: 1.25vw 1.33vw;
-    gap: 0.83vw;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    padding: 15px 16px;
+    gap: 10px;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .popup-content .product-card-details .product-card-details-button-add .wait-svg {
-    width: 2vw;
-    height: 2vw;
+    width: 24px;
+    height: 24px;
   }
 }
 

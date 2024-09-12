@@ -36,12 +36,15 @@
 import { computed, ref } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { minLength, maxLength, helpers, numeric } from '@vuelidate/validators'
-import { useStore } from 'vuex';
+import { useStore } from 'vuex'
+
+
 
 const store = useStore();
 
 const props = defineProps({
-    closeAuth: Function
+    closeAuth: Function,
+    showToast: Function
 })
 
 const isAuth = computed(() => store.state.authModule.isAuth);
@@ -49,6 +52,7 @@ const firstStepCompleted = ref(false);
 const authPhoneNumber = ref('');
 const smsCode = ref('');
 const num = ref(null);
+let verificationCode = '';
 
 const buttonName = ref('');
 
@@ -81,13 +85,19 @@ const handleFocus = () => {
     showError.value = false;
 };
 
+const generateRandomCode = () => {
+    return Math.floor(1000 + Math.random() * 9000).toString();
+};
+
 const codeSubmit = () => {
     buttonName.value = 'Ждём...';
     if (!v.value.$invalid) {
+        verificationCode = generateRandomCode();
         firstStepCompleted.value = true;
         startTimer();
     }
     buttonName.value = '';
+    alert("Ваш SMS-код: " + verificationCode);
 }
 
 let timerInterval;
@@ -105,11 +115,13 @@ const startTimer = () => {
 
 const codeAgree = () => {
     buttonName.value = 'Ждём...';
-    if (!v.value.$invalid) {
+    if (smsCode.value === verificationCode) {
         store.commit('setAuth', true);
-        alert('Вы успешно авторизовались!');
+        props.closeAuth();
+        props.showToast({ severity: 'success', summary: 'Поздравляем!', detail: 'Вы успешно авторизовались!', life: 5000 });
+    } else {
+        props.showToast({ severity: 'error', summary: 'Ошибка!', detail: 'Неверный код!', life: 5000 });
     }
-    props.closeAuth();
     buttonName.value = '';
 }
 </script>

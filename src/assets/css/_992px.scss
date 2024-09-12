@@ -1,19 +1,19 @@
 @media(min-width: 992px) {
     body {
         .header {
-            padding: 2.11vw 4.03vw;
+            padding: 21px 40px;
+
             .heading {
-                font-size: 3.23vw;
+                font-size: 32px;
+                line-height: 38px;
             }
             .auth-icon, .exit-icon, .cart-icon {
-                width: 3.23vw;
-                height: 3.23vw;
+                width: 32px;
+                height: 32px;
             }
         }
         .banner-catalog {
             width: 91.94%;
-            justify-content: space-between;
-            gap: 1.6vw;
 
             .banner {
                 width: 66.11%;
@@ -22,37 +22,41 @@
 
             .big-sale {
                 width: 32.1%;
-                min-height: 400px;
-                padding: 4.03vw 0;
+                min-height: 500px;
+                padding: 32px 0;
 
-                .text .text-up {
-                    font-size: 2.02vw;
-                    line-height: 2.83vw;
-                }
+                .text {
+                    gap: 8px;
 
-                .text .text-down {
-                    font-size: 4.04vw;
-                    line-height: 4.84vw;
+                    .text-up {
+                        font-size: 2.02vw;
+                        line-height: 2.82vw;
+                    }
+                    .text-down {
+                        font-size: 4.03vw;
+                        line-height: 4.84vw;
+                    }
                 }
 
                 .time {
-                    gap: 0.81vw;
-                    .time__days, .time__hours, .time__minutes, .time__seconds {
-                        gap: 0.81vw;
-                    }
-                    .time__days__number, .time__hours__number, .time__minutes__number, .time__seconds__number {
-                        font-size: 4.04vw;
-                        line-height: 4.84vw;
-                    }
-                    .time__days__text, .time__hours__text, .time__minutes__text, .time__seconds__text {
-                        font-size: 1.81vw;
-                        line-height: 2.18vw;
-                    }
+                    gap: 8px;
+                    &__days, &__hours, &__minutes, &__seconds {
+    
+                        &__number {
+                            font-size: 4.2vw;
+                            line-height: 5vw;
+                        }
+    
+                        &__text {
+                            font-size: 1.8vw;
+                            line-height: 2.4vw;
+                        }
+                    } 
                 }                
             }
 
             .catalog {
-                gap: 1.6vw;
+                gap: 16px;
 
                 .clothes, .shoes, .equipment {
                     width: 32.13%;
@@ -81,48 +85,57 @@
         .list-filter-container {
             width: 91.94%;
             height: 71.17vw;
-            margin: 7.26vw auto 0 auto;
-            gap: 3.23vw;
+            margin: 80px auto 0 auto;
+            gap: 32px;
 
             .heading {
-                font-size: 3.23vw;
-                line-height: 3.88vw;
+                font-size: 32px;
+                line-height: 38.4px;
             }
             .list-filter {
-                gap: 1.61vw;
+                gap: 16px;
 
                 .filter {
                     width: 100%;
-                    height: 4.84vw;
+                    height: 48px;
     
                     .filter-category-and-price {
     
                         .filter-category {
                             width: 71.4%;
-                            height: 4.84vw;
+                            height: 48px;
                                     
                             .custom-select {
         
                                 .select-selected-icon {                            
-                                    height: 4.84vw;
+                                    height: 48px;
                                     padding: 1.21vw 1.61vw;
-                                    gap: 0.81vw;
+                                    gap: 8px;
         
                                     .select-selected {                                
                                         font-size: 1.82vw;
                                         line-height: 2.18vw;
                                     }
                                     .svg-dropdown {
-                                        width: 2.42vw;
-                                        height: 2.42vw;
+                                        width: 24px;
+                                        height: 24px;
+                                    }                                    
+                                } 
+                                .select-items {
+                                        
+                                    .select-item {
+                                        height: 4.54vw;
+                                        font-size: 1.82vw;
+                                        line-height: 2.18vw;
+                                        padding: 0.71vw;
                                     }
-                                }                                                       
+                                }                                                      
                             }                    
                         }
 
                         .filter-price {
                             width: 28.68%;
-                            height: 4.84vw;
+                            height: 48px;
                             padding: 1.31vw 2.42vw;
                             font-size: 1.82vw;
                             line-height: 2.18vw;                            
@@ -131,7 +144,7 @@
                         .price-range {                              
                             
                             .price-value {
-                                gap: 0.81vw;
+                                gap: 8px;
                 
                                 .price-value-box {
                                     font-size: 2.02vw;
@@ -143,8 +156,8 @@
     
                     .in-stock {
                         width: 37.83%;
-                        height: 2.83vw;
-                        gap: 1.2vw;
+                        height: 48px;
+                        gap: 12px;
                         font-size: 1.82vw;
                         line-height: 2.18vw;
     
@@ -169,15 +182,15 @@
                 .filter-selected-category {                      
                     
                     .svg-remove-icon {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
                 .filter-selected-price {                      
                     
                     .svg-remove-icon {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }
@@ -210,7 +223,7 @@
                 min-height: 58.18vw;
 
                 .p-carousel-item-list {
-                    gap: 1.61vw;
+                    gap: 16px;
                 }
 
                 .p-carousel {
@@ -243,8 +256,8 @@
                 .product-color {
                     .product-card-details-colors-list {
                         .product-card-details-colors-list-item {
-                            width: 3.2vw;
-                            height: 3.2vw;
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                 }
@@ -254,39 +267,39 @@
             width: 91.94%;
             height: auto;
             min-height: 576px;
-            margin: 8.06vw auto 0 auto;
-            padding: 4.03vw;
-            gap: 4.03vw;
+            margin: 80px auto 0 auto;
+            padding: 40px;
+            gap: 40px;
 
             .offer-form {
-                gap: 4.03vw;
+                gap: 40px;
 
                 .offer-form-text {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .offer-form-text-heading {
-                        font-size: 3.25vw;
-                        line-height: 3.9vw;
+                        font-size: 32px;
+                        line-height: 38.4px;
                     }
                     .offer-form-text-paragraph {
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                     }
                 }
             }
             
             .offer-form .offer-form-inputs-container {                
-                gap: 2.42vw;
+                gap: 24px;
 
                 .offer-form-inputs {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .offer-form-input-wrapper {
                         width: 48.7%;
                         min-height: 40px;                            
 
                         .offer-form-input {
-                            gap: 1.01vw;
+                            gap: 10px;
                             font-size: 1.82vw;
                             line-height: 2.18vw;
                             padding: 1.31vw 1.61vw;
@@ -300,7 +313,7 @@
                         width: 48.7%;
                         height: 4.84vw;
                         padding: 0;
-                        gap: 1.32vw;
+                        gap: 13px;
                         font-size: 1.82vw;
                         line-height: 2.18vw;
                     }
@@ -313,7 +326,7 @@
                         .select-selected-icon {
                             min-height: 48px;
                             padding: 1.21vw 1.61vw;
-                            gap: 0.81vw;
+                            gap: 8px;
                         }
                         .select-selected {
                             font-size: 1.82vw;
@@ -331,27 +344,27 @@
                     }
 
                     .svg-dropdown {
-                        width: 2.6vw;
-                        height: 2.6vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
 
                 .offer-form-rating {
-                    gap: 2.42vw;
+                    gap: 24px;
                     font-size: 1.82vw;
                     line-height: 2.18vw;
 
                     .custom-radio {
-                        gap: 1.21vw;
+                        gap: 12px;
 
                         .radio-mark {
-                            width: 2.42vw;
-                            height: 2.42vw;
+                            width: 24px;
+                            height: 24px;
                         }
 
                         .radio-input:checked + .radio-mark::after {
-                            width: 2.42vw;
-                            height: 2.42vw;
+                            width: 24px;
+                            height: 24px;
                             border: 0.91vw solid #61AFD2;
                         }
                     }
@@ -360,11 +373,11 @@
                 .file-upload-container {
                     min-height: 48px;
                     padding: 1.21vw 1.61vw;
-                    gap: 0.81vw;
+                    gap: 8px;
 
                     .svg-clip {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
 
                     .file-upload-label {
@@ -379,8 +392,8 @@
                         line-height: 2.18vw;
                     }
                     .svg-remove {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
 
@@ -388,91 +401,42 @@
                     width: 48.8%;
                     min-height: 48px;
                     padding: 1.31vw 1.61vw;
-                    gap: 1.01vw;
+                    gap: 10px;
                     font-size: 1.82vw;
                     line-height: 2.18vw;
 
                     .wait-svg {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }
         }
         .footer {
-            margin: 8.07vw auto 0 auto;
-            padding: 2.92vw 4.03vw;
-            font-size: 1.82vw;
-            line-height: 2.18vw;
-        }
-        .auth-container-step-first, .auth-container-step-second {
-            width: 48.4%;
-            height: 23.79vw;
-            left: 25.8%;
-            top: 30.3vw;
-            padding: 3.23vw;
-
-            .auth-title {                
-                font-size: 2.02vw;
-                line-height: 2.82vw;
-            }
-            .svg-close-auth {
-                width: 2.42vw;
-                height: 2.42vw;
-                top: 1.61vw;
-                right: 1.61vw;
-            }
-            .auth-input-phone, .auth-input-code {
-                height: 4.84vw;
-                padding: 1.31vw 1.61vw;
-                gap: 1.01vw;
-                font-size: 1.82vw;
-                line-height: 2.18vw;
-            }
-            .auth-input-phone::placeholder, .auth-input-code::placeholder {
-                font-size: 1.82vw;
-                line-height: 2.18vw;
-            }
-            .form-error {
-                font-size: 1.82vw;
-            }
-            .button-code-submit, .button-agree, .button-code-submit-disabled, .button-agree-disabled {                
-                min-height: 48px;
-                padding: 1.31vw 1.61vw;
-                gap: 1.01vw;
-                font-size: 1.82vw;
-                line-height: 2.18vw;
-            }
-            .code-timer, .code-send-again {
-                font-size: 1.82vw;
-                line-height: 2.18vw;
-            }
-            .wait-svg {
-                width: 2.42vw;
-                height: 2.42vw;
-            }
+            margin: 80px auto 0 auto;
+            padding: 29px 40px;
+            font-size: 18px;
+            line-height: 21.6px;
         }        
         .popup-content {
             width: 91.93%;
             height: auto;
             min-height: 730px;            
-            top: 21.45%;
+            top: 300px;
             left: 4.033%;            
-            padding: 3.23vw;
-            gap: 3.23vw;
+            padding: 32px;
+            gap: 32px;
 
             .svg-close-popup {
-                width: 3.12vw;
-                height: 3.12vw;
-                top: 2.08vw;
-                right: 2.08vw;
+                width: 24px;
+                height: 24px;
             }
             
             .photos {
                 width: 45.75%;
                 height: auto;
                 padding: 0;
-                gap: 1.61vw;
+                gap: 16px;
 
                 .photo-zoom {
                     width: 100%;
@@ -489,7 +453,7 @@
                 .photo-list {
                     width: 100%;
                     height: 13.1vw;
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .photo-list-item {
                         width: 30.4%;                 
@@ -502,15 +466,15 @@
                 width: 50.47%;
                 height: auto;
                 padding: 0;
-                gap: 2.42vw;
+                gap: 24px;
 
                 .product-card-details-title {
-                    font-size: 2.02vw;
-                    line-height: 2.82vw;
+                    font-size: 20px;
+                    line-height: 28px;
                 }
 
                 .product-card-details-colors {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .product-card-details-colors-text {
                         font-size: 1.82vw;
@@ -518,24 +482,24 @@
                     }
 
                     .product-card-details-colors-list {
-                        gap: 0.81vw;
+                        gap: 8px;
 
                         .product-card-details-colors-list-item {
-                            width: 3.23vw;
-                            height: 3.23vw;
+                            width: 32px;
+                            height: 32px;
                         }
                     }
                 }   
                 
                 .product-card-details-size {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .product-card-details-size-text {
                         font-size: 1.82vw;
                         line-height: 2.18vw;
                     }
                     .product-card-details-size-choise {
-                        gap: 1.61vw;
+                        gap: 16px;
                         
                         .product-card-details-size-choise-item {
                             font-size: 2.02vw;
@@ -545,7 +509,7 @@
                 }
 
                 .product-card-details-description {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .product-card-details-description-title, .product-card-details-description-text {
                         font-size: 1.82vw;
@@ -554,7 +518,7 @@
                 }
 
                 .product-card-details-price {
-                    gap: 1.61vw;
+                    gap: 16px;
 
                     .product-card-details-current-price, .product-card-details-old-price {
                         font-size: 2.02vw;
@@ -564,13 +528,13 @@
 
                 .product-card-details-button-add {
                     padding: 1.31vw 1.61vw;
-                    gap: 1.01vw;
+                    gap: 10px;
                     font-size: 1.82vw;
                     line-height: 2.18vw;
 
                     .wait-svg {
-                        width: 2.42vw;
-                        height: 2.42vw;
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }
