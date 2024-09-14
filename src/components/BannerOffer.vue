@@ -19,10 +19,10 @@
                         <div class="custom-select" ref="dropdownDateRef">
                             <div class="select-selected-icon" @click="toggleDropdownDate">
                                 <div class="select-selected">{{ selectedDate || 'Выберите дату' }}</div>
-                                <svg v-if="dropdownDateOpen" @click.stop="toggleDropdownDate" class="svg-dropdown" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg v-if="dropdownDateOpen" @click.stop="toggleDropdownDate" class="svg-dropdown" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 7L10 13L16 7" stroke="#0B0B0B" stroke-linecap="round" transform="rotate(180, 10, 10)" />
                                 </svg>
-                                <svg v-else @click.stop="toggleDropdownDate" class="svg-dropdown" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg v-else @click.stop="toggleDropdownDate" class="svg-dropdown" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 7L10 13L16 7" stroke="#0B0B0B" stroke-linecap="round"/>
                                 </svg>
                             </div>                            
@@ -35,10 +35,10 @@
                         <div class="custom-select" ref="dropdownTimeRef">
                             <div class="select-selected-icon" @click="toggleDropdownTime">
                                 <div class="select-selected">{{ selectedTime || 'Выберите время' }}</div>
-                                <svg v-if="dropdownTimeOpen" @click.stop="toggleDropdownTime" class="svg-dropdown" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg v-if="dropdownTimeOpen" @click.stop="toggleDropdownTime" class="svg-dropdown" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 7L10 13L16 7" stroke="#0B0B0B" stroke-linecap="round" transform="rotate(180, 10, 10)" />
                                 </svg>
-                                <svg v-else @click.stop="toggleDropdownTime" class="svg-dropdown" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg v-else @click.stop="toggleDropdownTime" class="svg-dropdown" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 7L10 13L16 7" stroke="#0B0B0B" stroke-linecap="round"/>
                                 </svg>
                             </div>                            
@@ -61,7 +61,7 @@
                     </label>
                 </div>
                 <div class="file-upload-container" @change="handleFileUpload">
-                    <svg class="svg-clip" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg-clip" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path @change="handleFileUpload" d="M7.91069 6.74541V14.0294C7.91939 14.5621 8.14425 15.0701 8.53674 15.4437C8.92924 15.8174 9.4579 16.0269 10.0086 16.0269C10.5594 16.0269 11.088 15.8174 11.4805 15.4437C11.873 15.0701 12.0979 14.5621 12.1066 14.0294L12.1134 4.48197C12.1191 4.02671 12.0313 3.57489 11.8552 3.15269C11.679 2.73048 11.4179 2.34631 11.0871 2.02242C10.7563 1.69854 10.3623 1.44139 9.92801 1.26588C9.49368 1.09037 9.02766 1 8.55696 1C8.08625 1 7.62023 1.09037 7.18591 1.26588C6.75158 1.44139 6.3576 1.69854 6.02678 2.02242C5.69597 2.34631 5.43492 2.73048 5.25875 3.15269C5.08258 3.57489 4.99481 4.02671 5.00052 4.48197V14.0937C4.99093 14.7347 5.11316 15.3711 5.36011 15.9659C5.60705 16.5607 5.97378 17.1021 6.43898 17.5587C6.90417 18.0152 7.45855 18.3777 8.06988 18.6251C8.68122 18.8726 9.3373 19 10 19C10.6627 19 11.3188 18.8726 11.9301 18.6251C12.5414 18.3777 13.0958 18.0152 13.561 17.5587C14.0262 17.1021 14.3929 16.5607 14.6399 15.9659C14.8868 15.3711 15.0091 14.7347 14.9995 14.0937V5.11188" stroke="#0B0B0B" stroke-miterlimit="10" stroke-linecap="round"/>
                     </svg>
                     <input type="file" accept="image/*" class="offer-form-upload" id="file-upload" />
@@ -69,7 +69,7 @@
                 </div>
                 <div class="file-upload-text">
                     <span class="photo-file-name">{{ photoFile ? photoFile.name : '' }}</span>
-                    <svg v-if="photoFile" @click="removePhotoFile" class="svg-remove" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg v-if="photoFile" @click="removePhotoFile" class="svg-remove" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.75 5.25L5.25 18.75M18.75 18.75L5.25 5.25"  transform="scale(0.8)" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>                

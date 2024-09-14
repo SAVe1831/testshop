@@ -89,16 +89,16 @@ body .banner-catalog .big-sale .text {
   font-weight: 700;
 }
 body .banner-catalog .big-sale .text .text-up {
-  font-size: 4.4vw;
-  line-height: 6.6vw;
+  font-size: 14px;
+  line-height: 18.2px;
 }
 body .banner-catalog .big-sale .text .text-down {
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
 }
 body .banner-catalog .big-sale .sale-end {
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
   font-weight: 700;
   color: #FFFFFF;
   margin: 16px 0;
@@ -121,13 +121,13 @@ body .banner-catalog .big-sale .time__days, body .banner-catalog .big-sale .time
   gap: 4px;
 }
 body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
   font-weight: 700;
 }
 body .banner-catalog .big-sale .time__days__text, body .banner-catalog .big-sale .time__hours__text, body .banner-catalog .big-sale .time__minutes__text, body .banner-catalog .big-sale .time__seconds__text {
-  font-size: 2.5vw;
-  line-height: 3.4vw;
+  font-size: 8px;
+  line-height: 11.52px;
   font-weight: 400;
 }
 body .banner-catalog .catalog {
@@ -148,8 +148,8 @@ body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, bo
 body .banner-catalog .catalog .clothes .clothes-text, body .banner-catalog .catalog .clothes .shoes-text, body .banner-catalog .catalog .clothes .equipment-text, body .banner-catalog .catalog .shoes .clothes-text, body .banner-catalog .catalog .shoes .shoes-text, body .banner-catalog .catalog .shoes .equipment-text, body .banner-catalog .catalog .equipment .clothes-text, body .banner-catalog .catalog .equipment .shoes-text, body .banner-catalog .catalog .equipment .equipment-text {
   margin-left: 5vw;
   margin-top: 5vw;
-  font-size: 5vw;
-  line-height: 7vw;
+  font-size: 16px;
+  line-height: 22.4px;
   font-weight: 700;
   color: #0B0B0B;
   text-transform: uppercase;
@@ -183,8 +183,8 @@ body .list-filter-container {
   justify-content: space-between;
 }
 body .list-filter-container .heading {
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
   font-weight: 700;
   text-transform: uppercase;
   color: #0B0B0B;
@@ -196,30 +196,29 @@ body .list-filter-container .list-filter {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 5vw;
+  gap: 16px;
 }
 body .list-filter-container .list-filter .icon-prev, body .list-filter-container .list-filter .icon-next {
   display: none;
 }
 body .list-filter-container .list-filter .filter-button {
-  height: auto;
+  height: 40px;
   border-radius: 8px;
   border: none;
-  padding: 3.4vw 5vw;
+  padding: 11px 16px;
   background-color: #F5F5F5;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
-  gap: 3.1vw;
-  font-size: 4.4vw;
-  line-height: 5.6vw;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   cursor: pointer;
 }
 body .list-filter-container .list-filter .filter-button .filter-badge-icon {
-  width: 6.25vw;
-  height: 6.25vw;
+  width: 20px;
+  height: 20px;
 }
 body .list-filter-container .list-filter .filter-button:hover {
   border: 1px solid #61AFD2;
@@ -238,7 +237,7 @@ body .list-filter-container .list-filter .list {
   overflow: hidden;
 }
 body .list-filter-container .list-filter .list .p-carousel-item-list {
-  gap: 2.5vw;
+  gap: 8px;
 }
 body .list-filter-container .list-filter .list .p-carousel .p-carousel-item {
   flex: 0 0 47.2%;
@@ -272,7 +271,7 @@ body .list-filter-container .list-filter .list .product-card .product-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.2vw;
+  gap: 4px;
 }
 body .list-filter-container .list-filter .list .product-card .product-info .product-price {
   width: 55%;
@@ -294,38 +293,38 @@ body .list-filter-container .list-filter .list .product-card .product-info .old-
 }
 body .offer-container {
   width: 87.5%;
-  margin: 20vw auto 0 auto;
+  margin: 64px auto 0 auto;
   height: auto;
   min-height: 650px;
   background-color: #E7F6FC;
   border-radius: 16px;
   padding: 5vw;
-  gap: 5vw;
+  gap: 16px;
 }
 body .offer-container .offer-form {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 7.5vw;
+  gap: 24px;
 }
 body .offer-container .offer-form .offer-form-text {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 2.5vw;
+  gap: 8px;
 }
 body .offer-container .offer-form .offer-form-text .offer-form-text-heading {
-  font-size: 7.5vw;
-  line-height: 9.4vw;
+  font-size: 24px;
+  line-height: 29.76px;
   font-weight: 700;
   text-transform: uppercase;
   color: #0B0B0B;
 }
 body .offer-container .offer-form .offer-form-text .offer-form-text-paragraph {
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0b0b0b;
 }
@@ -334,34 +333,34 @@ body .offer-container .offer-form .offer-form-inputs-container {
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 5vw;
+  gap: 16px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 2.5vw;
+  gap: 8px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input {
   width: 100%;
-  height: 12.5vw;
+  height: 40px;
   border-radius: 8px;
   border: none;
-  padding: 3.4vw 5vw;
+  padding: 11px 16px;
   background-color: #FFFFFF;
-  gap: 3.1vw;
+  gap: 10px;
   position: relative;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
   font-family: "Montserrat", sans-serif;
   border: 1px solid transparent;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .offer-form-input::placeholder {
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
   font-family: "Montserrat", sans-serif;
@@ -375,11 +374,11 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-input
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .form-error {
   width: 100%;
   height: auto;
-  font-size: 3.75vw;
+  font-size: 12px;
   background-color: rgb(247, 126, 126);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  padding: 0 2vw;
+  padding: 0 6px;
   text-align: center;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select {
@@ -393,13 +392,13 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-input
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3.4vw 5vw;
-  gap: 2.5vw;
+  padding: 10px 16px;
+  gap: 8px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-selected {
   cursor: pointer;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
 }
@@ -410,13 +409,13 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-input
   border-radius: 8px;
   z-index: 1;
   overflow-y: auto;
-  height: 50vw;
+  height: 160px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .custom-select .select-items .select-item {
-  padding: 5vw;
+  padding: 16px;
   cursor: pointer;
-  gap: 3.1vw;
+  gap: 10px;
   display: flex;
   align-items: center;
   height: 25%;
@@ -431,30 +430,30 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-input
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-inputs .select-icon-svg {
   position: relative;
-  top: -9.4vw;
-  left: 65.4vw;
+  top: 30px;
+  left: 210px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating {
   display: flex;
   flex-direction: column;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
-  gap: 5vw;
+  gap: 16px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio {
   display: flex;
   align-items: center;
   cursor: pointer;
-  gap: 2.5vw;
+  gap: 8px;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input {
   display: none;
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-mark {
-  width: 6.25vw;
-  height: 6.25vw;
+  width: 20px;
+  height: 20px;
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
   border-radius: 24px;
@@ -462,10 +461,10 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-ratin
 }
 body .offer-container .offer-form .offer-form-inputs-container .offer-form-rating .custom-radio .radio-input:checked + .radio-mark::after {
   content: "";
-  width: 6.25vw;
-  height: 6.25vw;
+  width: 20px;
+  height: 20px;
   background-color: #FFFFFF;
-  border: 2.2vw solid #61AFD2;
+  border: 7px solid #61AFD2;
   border-radius: 24px;
   position: absolute;
   top: 50%;
@@ -480,13 +479,13 @@ body .offer-container .offer-form .offer-form-inputs-container .file-upload-cont
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2.5vw;
+  gap: 8px;
   background-color: #FFFFFF;
   cursor: pointer;
-  padding: 3.1vw 5vw;
+  padding: 10px 16px;
   border-radius: 8px;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
 }
@@ -508,8 +507,8 @@ body .offer-container .offer-form .offer-form-inputs-container .file-upload-text
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #0B0B0B;
 }
@@ -521,11 +520,11 @@ body .offer-container .offer-form .offer-form-inputs-container .offer-form-submi
   background-color: #61AFD2;
   border: none;
   border-radius: 8px;
-  padding: 3.4vw 5vw;
-  gap: 3.1vw;
+  padding: 11px 16px;
+  gap: 10px;
   font-family: "Montserrat", sans-serif;
-  font-size: 4.4vw;
-  line-height: 5.7vw;
+  font-size: 14px;
+  line-height: 18.2px;
   font-weight: 400;
   color: #FFFFFF;
   cursor: pointer;
@@ -1170,6 +1169,7 @@ body .product-card-details .wait-svg {
     justify-content: space-between;
     padding: 1.3vw 2.08vw;
     gap: 16px;
+    border: 1px solid transparent;
     cursor: pointer;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
@@ -1180,6 +1180,9 @@ body .product-card-details .wait-svg {
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon:hover {
     border: 1px solid #61AFD2;
+  }
+  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon:active {
+    border: 1px solid #0B0B0B;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items {
     position: absolute;
@@ -1234,9 +1237,6 @@ body .product-card-details .wait-svg {
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-items .select-item:hover {
     background-color: #F8F8FA;
   }
-  body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category:hover {
-    border: 1px solid #61AFD2;
-  }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-price {
     width: 28.3%;
     height: auto;
@@ -1244,6 +1244,7 @@ body .product-card-details .wait-svg {
     border-radius: 8px;
     padding: 1.43vw 2.08vw;
     background-color: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.82vw;
     line-height: 2.34vw;
     font-weight: 400;
@@ -2166,26 +2167,27 @@ body .product-card-details .wait-svg {
     padding: 21px 64px;
   }
   body .banner-catalog {
-    width: 89.33%;
+    width: 1072px;
+    height: 864px;
     margin-top: 24px;
     gap: 24px;
   }
   body .banner-catalog .banner {
-    width: 65.95%;
-    height: 46.67vw;
+    width: 707px;
+    height: 560px;
   }
   body .banner-catalog .big-sale {
-    width: 31.8%;
+    width: 341px;
     min-height: 560px;
-    padding: 3.75vw 0;
+    padding: 40px 0;
   }
   body .banner-catalog .big-sale .text .text-up {
-    font-size: 2vw;
-    line-height: 2.5vw;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .banner-catalog .big-sale .text .text-down {
-    font-size: 4vw;
-    line-height: 4.8vw;
+    font-size: 48px;
+    line-height: 57.6px;
   }
   body .banner-catalog .big-sale .time {
     gap: 16px;
@@ -2194,30 +2196,30 @@ body .product-card-details .wait-svg {
     gap: 8px;
   }
   body .banner-catalog .big-sale .time__days__number, body .banner-catalog .big-sale .time__hours__number, body .banner-catalog .big-sale .time__minutes__number, body .banner-catalog .big-sale .time__seconds__number {
-    font-size: 4vw;
-    line-height: 4.8vw;
+    font-size: 48px;
+    line-height: 57.6px;
   }
   body .banner-catalog .big-sale .time__days__text, body .banner-catalog .big-sale .time__hours__text, body .banner-catalog .big-sale .time__minutes__text, body .banner-catalog .big-sale .time__seconds__text {
-    font-size: 1.5vw;
-    line-height: 1.8vw;
+    font-size: 18px;
+    line-height: 21.6px;
   }
   body .banner-catalog .catalog {
     gap: 24px;
   }
   body .banner-catalog .catalog .clothes, body .banner-catalog .catalog .shoes, body .banner-catalog .catalog .equipment {
-    width: 31.81%;
-    height: 23.33vw;
+    width: 341px;
+    height: 280px;
   }
   body .banner-catalog .catalog .clothes .clothes-text, body .banner-catalog .catalog .clothes .shoes-text, body .banner-catalog .catalog .clothes .equipment-text, body .banner-catalog .catalog .shoes .clothes-text, body .banner-catalog .catalog .shoes .shoes-text, body .banner-catalog .catalog .shoes .equipment-text, body .banner-catalog .catalog .equipment .clothes-text, body .banner-catalog .catalog .equipment .shoes-text, body .banner-catalog .catalog .equipment .equipment-text {
-    margin-left: 2vw;
-    margin-top: 2vw;
-    font-size: 2vw;
-    line-height: 2.5vw;
+    margin-left: 24px;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 29.76px;
   }
   body .banner-catalog .catalog .clothes .clothes-image, body .banner-catalog .catalog .shoes .clothes-image, body .banner-catalog .catalog .equipment .clothes-image {
-    width: 21.67vw;
+    width: 260px;
     transform: scaleX(1.2);
-    height: 23.33vw;
+    height: 280px;
     right: 7%;
   }
   body .banner-catalog .catalog .clothes .shoes-image, body .banner-catalog .catalog .shoes .shoes-image, body .banner-catalog .catalog .equipment .shoes-image {
@@ -2241,18 +2243,18 @@ body .product-card-details .wait-svg {
   }
   body .list-filter-container .list-filter .filter {
     width: 100%;
-    height: 56px;
+    height: 58px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price {
     gap: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category {
-    width: 74.4%;
-    height: 56px;
+    width: 343px;
+    height: 58px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon {
-    height: 56px;
-    padding: 1.25vw 1.33vw;
+    height: 58px;
+    padding: 15px 16px;
     gap: 8px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-category .custom-select .select-selected-icon .select-selected {
@@ -2281,12 +2283,12 @@ body .product-card-details .wait-svg {
     height: 24px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .filter-price {
-    width: 26.2%;
+    width: 128px;
     height: 56px;
-    padding: 1.25vw 2vw;
+    padding: 15px 24px;
     gap: 10px;
-    font-size: 1.67vw;
-    line-height: 2.17vw;
+    font-size: 20px;
+    line-height: 26px;
   }
   body .list-filter-container .list-filter .filter .filter-category-and-price .price-range {
     width: 33.33vw;
@@ -2300,8 +2302,8 @@ body .product-card-details .wait-svg {
     line-height: 2.17vw;
   }
   body .list-filter-container .list-filter .filter .in-stock {
-    width: 35.5%;
-    height: 2.83vw;
+    width: 36.5%;
+    height: 58px;
     gap: 16px;
     font-size: 1.67vw;
     line-height: 2.17vw;
@@ -2914,7 +2916,7 @@ body .product-card-details .wait-svg {
   body .popup-content {
     width: 1192px;
     height: 600px;
-    top: 10px;
+    top: 500px;
     left: 0;
     margin-left: calc((100% - 1192px) / 2);
   }

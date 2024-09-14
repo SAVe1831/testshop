@@ -2,12 +2,12 @@
     <div class="list-filter-container">
         <h4 class="heading">Каталог</h4>
         <div class="list-filter">
-            <button class="filter-button" @click="openFilter" :style="{ width: isButtonApplyPushed ? '37.25vw' : '27.2vw' }">
+            <button class="filter-button" @click="openFilter" :style="{ width: isButtonApplyPushed ? '119px' : '87px' }">
                 <span>Фильтр</span>
                 <img v-if="isButtonApplyPushed" src="/badge-filter.svg" class="filter-badge-icon" alt="">
             </button>
             <div class="filter">
-                <div class="filter-category-and-price">
+                <div class="filter-category-and-price"> 
                     <div class="filter-category">
                         <div class="custom-select" ref="dropdownRef">
                             <div class="select-selected-icon" @click="toggleDropdown" >

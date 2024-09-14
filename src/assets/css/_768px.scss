@@ -158,6 +158,7 @@
                                     justify-content: space-between;
                                     padding: 1.3vw 2.08vw;
                                     gap: 16px;
+                                    border: 1px solid transparent;
                                     cursor: pointer;
         
                                     .select-selected {                                
@@ -170,6 +171,11 @@
                                 .select-selected-icon:hover {
                                     border: 1px solid #61AFD2;
                                 }
+
+                                .select-selected-icon:active {
+                                    border: 1px solid #0B0B0B;
+                                }
+
                                 .select-items {
                                     position: absolute;
                                     z-index: 1;
@@ -230,9 +236,7 @@
                                 }                        
                             }                    
                         }
-                        .filter-category:hover {
-                            border: 1px solid #61AFD2;
-                        }
+
                         .filter-price {
                             width: 28.3%;
                             height: auto;
@@ -240,6 +244,7 @@
                             border-radius: 8px;
                             padding: 1.43vw 2.08vw;
                             background-color: #F5F5F5;
+                            font-family: 'Montserrat', sans-serif;
                             font-size: 1.82vw;
                             line-height: 2.34vw;
                             font-weight: 400;
