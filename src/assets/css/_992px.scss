@@ -84,7 +84,7 @@
         }
         .list-filter-container {
             width: 91.94%;
-            height: 71.17vw;
+            height: 710px;
             margin: 80px auto 0 auto;
             gap: 32px;
 
@@ -109,12 +109,11 @@
         
                                 .select-selected-icon {                            
                                     height: 48px;
-                                    padding: 1.21vw 1.61vw;
-                                    gap: 8px;
+                                    padding: 12px 16px;
         
                                     .select-selected {                                
-                                        font-size: 1.82vw;
-                                        line-height: 2.18vw;
+                                        font-size: 18px;
+                                        line-height: 21.6px;
                                     }
                                     .svg-dropdown {
                                         width: 24px;
@@ -124,21 +123,21 @@
                                 .select-items {
                                         
                                     .select-item {
-                                        height: 4.54vw;
-                                        font-size: 1.82vw;
-                                        line-height: 2.18vw;
-                                        padding: 0.71vw;
+                                        height: 45px;
+                                        font-size: 18px;
+                                        line-height: 21.6px;
+                                        padding: 7px;
                                     }
                                 }                                                      
                             }                    
                         }
 
                         .filter-price {
-                            width: 28.68%;
+                            width: 29%;
                             height: 48px;
-                            padding: 1.31vw 2.42vw;
-                            font-size: 1.82vw;
-                            line-height: 2.18vw;                            
+                            padding: 13px 24px;
+                            font-size: 18px;
+                            line-height: 21.6px;                            
                         }
                             
                         .price-range {                              
@@ -155,11 +154,11 @@
                     }   
     
                     .in-stock {
-                        width: 37.83%;
+                        width: 38%;
                         height: 48px;
                         gap: 12px;
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
     
                         .switch-svg {
                             width: 5.24vw;
@@ -180,14 +179,18 @@
                 gap: 24px;
 
                 .filter-selected-category {                      
-                    
+                    font-size: 18px;
+                    line-height: 21.6px;
+
                     .svg-remove-icon {
                         width: 24px;
                         height: 24px;
                     }
                 }
                 .filter-selected-price {                      
-                    
+                    font-size: 18px;
+                    line-height: 21.6px;
+
                     .svg-remove-icon {
                         width: 24px;
                         height: 24px;
@@ -234,22 +237,23 @@
                 }
             }
 
-            .list-filter .list .product-card .product-info {               
+            .list-filter .list .product-card .product-info {  
+                gap: 12px;             
 
                 .product-price {
                     width: 17vw;
                 }
                 .current-price, .old-price, .product-description {
-                    font-size: 1.82vw;
-                    line-height: 2.18vw;
+                    font-size: 18px;
+                    line-height: 21.6px;
                 }  
                 .product-size {
 
                     .product-card-details-size-choise {
                         display: flex;
                         justify-content: flex-start;
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                         gap: 16px;
                     }
                 } 
@@ -300,46 +304,46 @@
 
                         .offer-form-input {
                             gap: 10px;
-                            font-size: 1.82vw;
-                            line-height: 2.18vw;
-                            padding: 1.31vw 1.61vw;
+                            font-size: 18px;
+                            line-height: 21.6px;
+                            padding: 13px 16px;
                         }
 
                         .form-error {
-                            font-size: 1.82vw;
+                            font-size: 18px;
                         }
                     }
                     .offer-form-input {
                         width: 48.7%;
-                        height: 4.84vw;
+                        height: 48px;
                         padding: 0;
                         gap: 13px;
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                     }
                     .offer-form-input::placeholder {
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                     }
 
                     .custom-select  {
                         .select-selected-icon {
                             min-height: 48px;
-                            padding: 1.21vw 1.61vw;
+                            padding: 12px 16px;
                             gap: 8px;
                         }
                         .select-selected {
-                            font-size: 1.82vw;
-                            line-height: 2.18vw;
+                            font-size: 18px;
+                            line-height: 21.6px;
                         }
 
                         .select-items .select-item {
-                            padding: 2.08vw;
-                            height: 5.21vw;
+                            padding: 20px;
+                            height: 50px;
                         }
 
                         .select-items {
-                            height: 20.83vw;
+                            height: 200px;
                         }
                     }
 
@@ -351,8 +355,8 @@
 
                 .offer-form-rating {
                     gap: 24px;
-                    font-size: 1.82vw;
-                    line-height: 2.18vw;
+                    font-size: 18px;
+                    line-height: 21.6px;
 
                     .custom-radio {
                         gap: 12px;
@@ -372,7 +376,7 @@
 
                 .file-upload-container {
                     min-height: 48px;
-                    padding: 1.21vw 1.61vw;
+                    padding: 12px 16px;
                     gap: 8px;
 
                     .svg-clip {
@@ -381,15 +385,15 @@
                     }
 
                     .file-upload-label {
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                     }
                 }
 
                 .file-upload-text {
                     .photo-file-name {
-                        font-size: 1.82vw;
-                        line-height: 2.18vw;
+                        font-size: 18px;
+                        line-height: 21.6px;
                     }
                     .svg-remove {
                         width: 24px;
@@ -400,10 +404,10 @@
                 .offer-form-submit {
                     width: 48.8%;
                     min-height: 48px;
-                    padding: 1.31vw 1.61vw;
+                    padding: 13px 16px;
                     gap: 10px;
-                    font-size: 1.82vw;
-                    line-height: 2.18vw;
+                    font-size: 18px;
+                    line-height: 21.6px;
 
                     .wait-svg {
                         width: 24px;
@@ -467,11 +471,6 @@
                 height: auto;
                 padding: 0;
                 gap: 24px;
-
-                .product-card-details-title {
-                    font-size: 20px;
-                    line-height: 28px;
-                }
 
                 .product-card-details-colors {
                     gap: 16px;

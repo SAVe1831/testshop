@@ -76,7 +76,9 @@
                 <button type="button" class="offer-form-submit" @click="formSubmit"><img v-if="buttonName === `Ждём...`" src="/wait.svg" alt="" class="wait-svg">{{ buttonName || `Отправить` }}</button>
             </div>
         </form>
-        <img class="offer-picture" src="/offer-picture.png" alt="">
+        <div class="offer-picture">
+            <img class="offer-picture-img" src="/offer-picture.png" alt="">
+        </div>
     </div>
 </template>
 

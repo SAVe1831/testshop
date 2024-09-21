@@ -1,4 +1,4 @@
-@media(min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     body {
         .p-toast {
             width: 780px;
@@ -27,29 +27,28 @@
             padding: 21px 64px;
         }
         .banner-catalog {
-            width: 1072px;
-            height: 864px;
+            width: 89.3%;
+            min-height: 864px;
             margin-top: 24px;
             gap: 24px;
 
             .banner {
-                width: 707px;
-                height: 560px;
+                width: 65.9%;
             }
 
             .big-sale {
-                width: 341px;
+                width: 31.7%;
                 min-height: 560px;
-                padding: 40px 0;
+                padding: 3.33vw 0;
 
                 .text .text-up {
-                    font-size: 24px;
-                    line-height: 29.76px;
+                    font-size: 2vw;
+                    line-height: 2.48vw;
                 }
 
                 .text .text-down {
-                    font-size: 48px;
-                    line-height: 57.6px;
+                    font-size: 4vw;
+                    line-height: 4.8vw;
                 }
 
                 .time {
@@ -59,13 +58,13 @@
                         gap: 8px;
 
                         &__number {
-                            font-size: 48px;
-                            line-height: 57.6px;
+                            font-size: 4vw;
+                            line-height: 4.8vw;
                         }
     
                         &__text {
-                            font-size: 18px;
-                            line-height: 21.6px;
+                            font-size: 1.5vw;
+                            line-height: 1.8vw;
                         }
                     }
                 }                
@@ -73,21 +72,22 @@
 
             .catalog {
                 gap: 24px;
+                flex-wrap: nowrap;
 
                 .clothes, .shoes, .equipment {
-                    width: 341px;
-                    height: 280px;
+                    width: 31.7%;
+                    height: 23.33vw;
     
                     .clothes-text, .shoes-text, .equipment-text {
                         margin-left: 24px;
                         margin-top: 24px;
-                        font-size: 24px;
-                        line-height: 29.76px;
+                        font-size: 2vw;
+                        line-height: 2.48vw;
                     }
                     .clothes-image {
-                        width: 260px;
+                        width: 21.66vw;
                         transform: scaleX(1.2);
-                        height: 280px;
+                        height: 23.33vw;
                         right: 7%;
                     }
                     .shoes-image {
@@ -101,7 +101,7 @@
         }
         .list-filter-container {
             width: 89.33%;
-            height: 65.67vw;
+            height: 60.67vw;
             margin: 88px auto 0 auto;
             gap: 32px;
 
@@ -117,10 +117,12 @@
                     height: 58px;
     
                     .filter-category-and-price {
+                        width: 45.89%;
+                        justify-content: flex-start;
                         gap: 24px;
 
                         .filter-category {
-                            width: 343px;
+                            width: 69.3%;
                             height: 58px;
                                     
                             .custom-select {
@@ -131,8 +133,8 @@
                                     gap: 8px;
         
                                     .select-selected {                                
-                                        font-size: 1.67vw;
-                                        line-height: 2.17vw;
+                                        font-size: 20px;
+                                        line-height: 26px;
                                     }
                                     .svg-dropdown {
                                         width: 24px;
@@ -140,13 +142,13 @@
                                     }
                                 } 
                                 .select-items {
-                                    height: 16.7vw;
-                                        
+                                    height: 360px;
+                                    overflow: visible;     
+
                                     .select-item {
-                                        height: 3.17vw;
-                                        font-size: 1.67vw;
-                                        line-height: 2.17vw;
-                                        padding: 0.58vw;
+                                        font-size: 20px;
+                                        line-height: 26px;
+                                        padding: 7px;
 
                                         .p-checkbox.p-component {
                                             width: 24px;
@@ -164,24 +166,27 @@
                         }
 
                         .filter-price {
-                            width: 128px;
-                            height: 56px;
-                            padding: 15px 24px;
+                            width: 25.9%;
+                            height: 58px;
+                            padding: 15px 21px;
                             gap: 10px;
                             font-size: 20px;
                             line-height: 26px;     
                         }
                             
                         .price-range {                              
-                            width: 33.33vw;
+                            width: 500px;
                             padding: 24px;
+                            gap: 32px;
+                            top: 3.5vw;
 
                             .price-value {
                                 gap: 8px;
                 
                                 .price-value-box {
-                                    font-size: 1.67vw;
-                                    line-height: 2.17vw;                                    
+                                    width: 180px;
+                                    font-size: 20px;
+                                    line-height: 26px;                                    
                                 }
                             }
                         }
@@ -191,8 +196,8 @@
                         width: 36.5%;
                         height: 58px;
                         gap: 16px;
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
     
                         .switch-svg {
                             width: 4.33vw;
@@ -206,8 +211,8 @@
             .filter-selected {
 
                 .filter-selected-category {                      
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;
+                    font-size: 20px;
+                    line-height: 26px;
 
                     .svg-remove-icon {
                         width: 24px;
@@ -215,8 +220,8 @@
                     }
                 }
                 .filter-selected-price {      
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;                
+                    font-size: 20px;
+                    line-height: 26px;                
                     
                     .svg-remove-icon {
                         width: 24px;
@@ -230,12 +235,20 @@
                 .icon-prev, .icon-next {
                     width: 56px;
                     height: 56px;
-                }                
+                } 
+                
+                .icon-prev {
+                    left: -28px;
+                }
+
+                .icon-next {
+                    right: -28px;
+                }
             }            
 
             .list-filter .list {
                 height: auto;
-                min-height: 52.33vw;
+                min-height: 628px;
 
                 .p-carousel-item-list {
                     gap: 24px;
@@ -261,14 +274,14 @@
                     width: 17vw;
                 }
                 .current-price, .old-price, .product-description {
-                    font-size: 1.67vw;
-                    line-height: 2.17vw;
+                    font-size: 20px;
+                    line-height: 26px;
                 }  
                 .product-size {
 
                     .product-card-details-size-choise {
-                        font-size: 1.67vw;
-                        line-height: 2.17vw;
+                        font-size: 20px;
+                        line-height: 26px;
                     }
                 } 
                 .product-color {
