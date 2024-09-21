@@ -39,11 +39,11 @@
                 <rect x="2" y="2" width="20" height="20" rx="10" fill="white"/>
                 <rect x="2" y="2" width="20" height="20" rx="10" fill="white"/>
             </svg>
-            <svg v-if="switchSvg==='hover'" @mouseleave="switchSvg='default'" @click="switchSvg='active'" class="switch-svg" width="14.3vw" height="7.5vw" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg v-if="switchSvg==='hover'" @mouseleave="switchSvg='default'" @click="switchSvg='active'" class="switch-svg" width="46px" height="24px" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="24" rx="12" fill="#E7F6FC"/>
                 <rect x="2" y="2" width="20" height="20" rx="10" fill="white"/>
             </svg>
-            <svg v-if="switchSvg==='active'" @click="switchSvg='default'" class="switch-svg" width="14.3vw" height="7.5vw" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg v-if="switchSvg==='active'" @click="switchSvg='default'" class="switch-svg" width="46px" height="24px" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="24" rx="12" fill="#61AFD2"/>
                 <rect x="24" y="2" width="20" height="20" rx="10" fill="white"/>
             </svg>
