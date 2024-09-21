@@ -580,6 +580,10 @@
             font-size: 14px;
             line-height: 18.2px;
             text-align: end;
+
+            span {
+                display: inline;
+            }
         }
         .auth-container-step-first, .auth-container-step-second {
             width: 480px;

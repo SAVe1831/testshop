@@ -2,7 +2,7 @@
     <div class="filter-container">
         <div class="title">
             <span>Фильтр</span>
-            <svg @click="closeFilter" width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg @click="closeFilter" width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.625 4.375L4.375 15.625M15.625 15.625L4.375 4.375" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
@@ -23,7 +23,7 @@
                     <div class="price-value-box">
                         <span>от {{ rangeValue[0]*500 }}</span>
                     </div>
-                    <svg width="6.25vw" height="6.25vw" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20px" height="20px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.125 10H16.875" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <div class="price-value-box">
@@ -34,7 +34,7 @@
         </div>
         <div class="in-stock">
             <span>Показывать только в наличии</span>
-            <svg v-if="switchSvg==='default'" @mousemove="switchSvg='hover'" class="switch-svg" width="14.3vw" height="7.5vw" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg v-if="switchSvg==='default'" @mousemove="switchSvg='hover'" class="switch-svg" width="46px" height="24px" viewBox="0 0 46 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="46" height="24" rx="12" fill="#F5F5F5"/>
                 <rect x="2" y="2" width="20" height="20" rx="10" fill="white"/>
                 <rect x="2" y="2" width="20" height="20" rx="10" fill="white"/>

@@ -3,7 +3,7 @@
         <div class="product-card-details-title">
             <span>{{ description }}</span>
             <router-link @click="closeDetails" to="/">
-            <svg width="7.5vw" height="7.5vw" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.75 5.25L5.25 18.75M18.75 18.75L5.25 5.25" stroke="#0B0B0B" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             </router-link>
